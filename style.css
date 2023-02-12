@@ -72,14 +72,16 @@ body {
      border-radius: 10px;
  }
  
- 
+ .home-btn2{
+    justify-content: space-evenly;
+ }
  .description,.home-btns{
   
  display: flex;
  justify-content: space-evenly;
  font-weight: 100;
  border-radius: 10px;
- margin-top: 70px;
+ margin-top: 60px;
  margin-bottom: 20px;
  }
  
@@ -89,22 +91,12 @@ body {
      border: 2px solid #fcfdff;
      border-radius: 4px;
      box-shadow: #494848;
-     padding: 45px;
-     margin-bottom: 14px;
+     padding: 30px 40px;
      text-align: justify;
- }
- .profile{
-     display: inline-block;
- 
-   align-items: center;
-     border: 2px solid rgba(56, 59, 61, 0.288);
-     box-shadow: #3771C8;
-     border-radius: 4px 4px 4px 50px;
-     margin: 5px 4px 4px 8px;
  }
  
  .my-profile{
-     width: 100%;
+     width: 70%;
  }
  .home-btn1,.home-btn2{
      display: flex;
@@ -137,9 +129,10 @@ body {
      margin: 16px 4px 16px 16px;
      font-size: 12px;
  }
- /* .content{
-     flex-direction: column;
- } */
+  .content{
+    display: flex;
+     align-items: center;
+ } 
  
  .work,.text{
     
@@ -166,6 +159,7 @@ body {
      border-radius: 20px;
      margin: 0 8px;
      font-family: 'Montserrat', sans-serif;
+     align-items: center;
  }
  .project-content >p{
      text-align: justify;
@@ -225,9 +219,9 @@ body {
  }
  
  
- .content{
+ /* .content{
      padding-top: 10px;
- }
+ } */
  
  .icon-2{
      max-height: 30px;
@@ -293,6 +287,7 @@ body {
  .description1,#about1,#about2,#about4{
      display: flex;
    border: none;
+   justify-content: space-evenly;
    margin: 20px 0px;
  }
  .item:after{
@@ -339,7 +334,7 @@ body {
      display: flex;
      padding: 20px;
  }
- #about4{
+ #about4,.col-1{
      display: flex;
      flex-direction: column;
  }
@@ -429,15 +424,36 @@ body {
      display: flex;
  
    }
+   .row>div{
+    margin: 20px;
+   }
    .foot>input{
      border-radius: 1px;
      background-color:rgba(112, 112, 112, 0.267);
      font-family:'Montserrat', sans-serif;
    }
  
+.text-me,.col-3{
+    display: flex;
+    margin-left: 20px;
+    
+}
+   
+.col-3>div{
+  margin: 0px 30px;
+}
    @media(max-width:1428px) {
      .pages{
  padding: 0px 20px;
      }
  }
- 
+
+ .col-3{
+    background-color: #0e264448;
+ }
+ footer{
+   display: block;
+    border-top: 2px solid rgba(0, 0, 0, 0.267); 
+    box-shadow: 5px #430000;
+    margin-left: 20px;
+}
