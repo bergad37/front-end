@@ -22,4 +22,33 @@ function validatelog() {
       input2.innerText = "";
     }
   }
+
+  function navigate(){
+  // Get the element for the "About" title
+var aboutTitle = document.getElementById("about-title");
+
+// Get the position of the "About" title
+var aboutTitlePosition = aboutTitle.offsetTop;
+// Scroll to the position of the "About" title
+window.scrollTo({
+  top: aboutTitlePosition,
+  behavior: "smooth"
+});
+  }
+array.forEach(element => {
   
+});
+
+
+
+const emailInput = document.querySelector("#email");
+
+emailInput.addEventListener("input", function(event) {
+  let email = event.target.value;
+  let isValid = /^[^@]+@[^@]+\.[a-z]+$/i.test(email);
+  if (!isValid) {
+    emailInput.style.border = "1px solid red";
+  } else {
+    emailInput.style.border = "1px solid green";
+  }
+});

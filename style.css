@@ -5,6 +5,7 @@ body {
      background-image: url('./Images/Background.jpg');
      background-repeat:repeat-y;
      background-size: cover;
+  
  }
  li,
  a,
@@ -26,9 +27,9 @@ body {
          border-radius: 10px;
          margin-top: 70px;
          margin-bottom: 20px;
+        
      /* padding: 30px 10px; */
  }
- 
  
  .logo {
  
@@ -247,7 +248,6 @@ body {
      justify-content: space-between;
      padding: 0 6px;
  }
- 
  .container{
      
  display:grid;
@@ -314,7 +314,7 @@ body {
  }
  img{
      padding: 70px 0px 0px 0px;
-     border-radius: 50%;
+     box-shadow: #494848;
  }
  
  .picture,.pict{
