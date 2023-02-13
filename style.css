@@ -18,13 +18,6 @@ body {
      text-decoration: none;
  }
  
- .pages{
-   display: flex;
-   flex-direction: column;
- padding: 0 60px;
- width: 100%;
- }
- 
      .header{
          display: flex;
          justify-content: space-evenly;
@@ -261,7 +254,7 @@ body {
  height: 50%;
  place-items: center;
  background-color: rgb(255, 255, 255);
- padding: 80px;
+ padding: 40px;
  border-radius: 5%;
  animation: 6s infinite alternate linear;
      }
@@ -337,6 +330,7 @@ body {
  #about4,.col-1{
      display: flex;
      flex-direction: column;
+     align-items: center;
  }
  
  .dash{
@@ -424,6 +418,9 @@ body {
      display: flex;
  
    }
+   .foot{
+    max-width: 100%;
+   }
    .row>div{
     margin: 20px;
    }
@@ -438,6 +435,7 @@ body {
     margin-left: 20px;
     
 }
+
    
 .col-3>div{
   margin: 0px 30px;
@@ -456,4 +454,69 @@ body {
     border-top: 2px solid rgba(0, 0, 0, 0.267); 
     box-shadow: 5px #430000;
     margin-left: 20px;
+}
+
+.col-5,.col-6,.col-7,.col-8,.col-9,.settings{
+    display: flex;
+    flex-wrap: wrap;
+    font-family:'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    align-items: center;
+    text-align: center;
+   padding: 2px 50px;
+   border-radius: 8px;
+margin: 3%;
+}
+.col{
+    display: block;
+    border-radius: 50%;
+    height: 10%;
+    width: 100%;
+
+}
+.col-5{
+    background-image: linear-gradient(rgba(0, 38, 255, 0.726),rgba(0, 89, 255, 0.945),rgba(0, 35, 235, 0.726));
+}
+.col-6{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 252, 252)); 
+    color: rgb(4, 102, 230);
+}
+
+.col-7{
+    background-image: linear-gradient(rgb(0, 226, 19),rgb(71, 218, 3),rgb(1, 202, 28)); 
+    color: whitesmoke;
+}
+.col-8{
+    background-image: linear-gradient(rgb(255, 118, 6),rgba(255, 115, 1, 0.959),rgb(223, 108, 0)); 
+    color: whitesmoke;
+}.col-9{
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(255, 50, 50),rgb(196, 4, 4)); 
+    color: rgb(208, 213, 255);
+}
+
+.col-5:hover{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 252, 252)); 
+    color: rgb(4, 102, 230);
+}
+.col-6:hover{
+    background-image: linear-gradient(rgba(31, 64, 255, 0.726),rgba(0, 89, 255, 0.945),rgba(55, 85, 255, 0.726)); 
+    color: black;
+}
+
+.col-7:hover{
+    background-image: linear-gradient(rgb(255, 197, 6),rgba(255, 187, 1, 0.959),rgb(207, 187, 0)); 
+    color: whitesmoke;
+}
+.col-8:hover{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 252, 252)); 
+    color: rgb(4, 102, 230);
+}.col-9:hover{
+    background-image: linear-gradient(rgb(138, 2, 2),rgb(146, 21, 21),rgb(128, 2, 2)); 
+    color: rgb(208, 213, 255);
+}
+
+.dash-btn{
+    background-color: gray;
+    border-radius: 1px;
 }
