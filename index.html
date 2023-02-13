@@ -35,16 +35,37 @@
             <div class="menus">
                     <ul class="nav_titles">
                         <li><a href="/index1.html"> Home</li>
-                        <li><a href="x"> About us</li>
-                        <li><a href="/index1.html/"> Skills</li>
-                        <li><a href="/work.html"> My work</li>
-                        <li><a href="/blogs.html"> Blogs</li>
-                        <li><a href="/contactme.html"> Contact Me</li>
+                        <li><a href="#about-title" onclick="navigate()"> About us</a></li>
+                        <li><a href="#skills-title"> Skills</li>
+                        <li><a href="#work-title""> My work</li>
+                        <li><a href="#blog-title"> Blogs</li>
+                        <li><a href="#contact-title"> Contact Me</li>
                     </ul>
             </div>
             <div class="log"><a href="/login.html"> <button>Log in</button></a></div>
 
          </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
          <div class="description">
             <div class="words">
                 <p><b>Hello ,</b> </p>
@@ -70,7 +91,7 @@
         </div>
 
         <div class="title" style="margin: 60px 40px">
-            <h1 style="text-align: center;color: #05152E;font-weight: bold;">About Me</h1>
+            <h1 style="text-align: center;color: #05152E;font-weight: bold;" id="about-title">About Me</h1>
         </div>
         <div class="about-us" id="about2">
             <div class="words" id="about3" style="margin-right: 40px;">
@@ -115,7 +136,7 @@
                 </div>
             </div>
             <div>
-                <div>
+                <>
                     <div class="project-content">
                         <p style="text-align: justify;word-spacing: 8px;"> <b> A fresh graduate </b> at the university
                             of Rwanda College of Science and Tecnology.Tech ethusiat and business oriented.Have involved
@@ -124,10 +145,10 @@
                             deployed to the market as MVPS.
                         </p>
                     </div>
-                    <div class="projects">
-                        <div class="words"> </div>
-                        <div class="words"></div>
-                        <div class="words"></div>
+                    <div><h2>Partners</h2></div>
+                    <div class="projects" style="flex-wrap: wrap;">
+                       
+                       <img src="./Images/Andela.png" alt="" style="width: 200px;height: 60px;border-radius: 0px;"> 
                     </div>
                 </div>
             </div>
@@ -138,11 +159,11 @@
         <div class="work" style="margin: 60px 0px 60px ;">
 
             <div class="title">
-                <h1 style="text-align: center;color: #05152E;font-weight: bold;">My works</h1>
+                <h1 style="text-align: center;color: #05152E;font-weight: bold;" id="work-title">My works</h1>
             </div>
-            <div class="projects">
+            <div class="projects" >
 
-                <div class="project">
+                <div class="project" >
                     <div class="content">
                         <div>
                             <img src="Images/iot.svg" alt="" class="icon-1">
@@ -191,7 +212,7 @@
         <div class="work">
 
             <div class="title">
-                <h1 style="text-align: center;color: #05152E;font-weight: bold;">My skills</h1>
+                <h1 style="text-align: center;color: #05152E;font-weight: bold;" id="skills-title">My skills</h1>
             </div>
             <div class="projects">
 
@@ -239,7 +260,7 @@
         </div>
         <div class="blog-container">
             <div class="title">
-                <h1 style="text-align:center;color: #05152E;">Blogs</h1>
+                <h1 style="text-align:center;color: #05152E;" id="blog-title">Blogs</h1>
             </div>
 
             <div class="Blogs">
@@ -324,7 +345,7 @@
         </div>
         <div class="contact-container">
             <div class="title">
-                <h2 style="text-align:center;color: #05152E;">Contact Me</h2>
+                <h2 style="text-align:center;color: #05152E;" id="contact-title">Contact Me</h2>
             </div>
 
             <div class="work">
@@ -351,7 +372,7 @@
                                             <div class="entry2"><br>
                                                 <label for="email">E-mail*</label>
                                                 <br>
-                                                <input type="email" name="email" placeholder="  accoun@email.com" required>
+                                                <input type="email" name="email" placeholder="  accoun@email.com" id="email" required>
                                             </div>
                                         </div>
                                         <div class="entry2">
@@ -390,8 +411,8 @@
               <h5>Subscribe</h5>
               <p>Get updates on my latest work and news.</p>
               <form action="#" method="post">
-                <input type="email" placeholder="Your email">
-                <button type="submit">Subscribe</button>
+                <input type="email" placeholder="Your email" id="email">
+                <button type="submit" >Subscribe</button>
               </form>
             </div>
             <div class="col-sm-3">
@@ -409,5 +430,5 @@
       
     
 </body>
-
+<script src="./index.js"></script>
 </html>
