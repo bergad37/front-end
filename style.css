@@ -72,6 +72,7 @@ body {
  .description,.home-btns{
   
  display: flex;
+max-width: 100%;
  justify-content: space-evenly;
  font-weight: 100;
  border-radius: 10px;
@@ -475,6 +476,10 @@ margin: 3%;
     width: 100%;
 
 }
+
+.col-5:hover,.col-6:hover,.col-7:hover,.col-8:hover,.col-9:hover{
+    cursor: pointer;
+}
 .col-5{
     background-image: linear-gradient(rgba(0, 38, 255, 0.726),rgba(0, 89, 255, 0.945),rgba(0, 35, 235, 0.726));
 }
@@ -519,4 +524,19 @@ margin: 3%;
 .dash-btn{
     background-color: gray;
     border-radius: 1px;
+  }
+@media screen and (max-width: 10px){
+    
+.logo{
+    float: none;
+    text-align: center;
+}
+
+.menus ul,.menus ul li{
+float: none;
+}
+.description{
+    flex-direction: column-reverse;
+}
+
 }
