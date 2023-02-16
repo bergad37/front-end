@@ -30,7 +30,7 @@ body {
     box-shadow: #282727;
 }
 .logo{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color:#022747;
 	font-size:25px;
 	font-weight:bold;
@@ -593,7 +593,7 @@ section{
 
 
 
-@media screen and (max-width:433px){
+@media screen and (max-width:800px){
     .navigation{
 	
         background:#5e5c6092;
@@ -656,10 +656,11 @@ section{
 
 /*Profile section */
 
-.description{
+.description,#about2,.projects{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 10px;
 
 }
 
@@ -667,4 +668,7 @@ section{
 		height:130%;
 		
 	}
+
+
+
 }
