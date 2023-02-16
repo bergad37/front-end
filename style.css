@@ -24,9 +24,10 @@ body {
 	
 	position:fixed;
 	z-index:2;
-	padding:0px 30px 0px 30px;
-	background:#636164;
+	padding: 10px 30px 0px 30px;
+	background:#00c39fa0;
 	top:0px;
+    box-shadow: #282727;
 }
 .logo{
 	font-family:Arial, Helvetica, sans-serif;
@@ -47,7 +48,6 @@ body {
 }
 .menu-toggler:before{
 	content: "\f0c9";
-	font-family:"fontAwesome";
 	color:#555252;
 	font-size:25px;
 	width:100%;
@@ -59,6 +59,7 @@ body {
 	right:40px;
 	position: relative;
 	height:50px;
+    padding-bottom: 20px;
 	
 }
 .navbar >.navbar-items{
@@ -72,7 +73,6 @@ body {
 	list-style-type:none;
 	display:inline-block;
 	height:100%;
-	font-family:'Red Hat Text';
 	font-size:16px;
 }
 .navbar > .navbar-items >.navbar-nav > .nav-link{
@@ -105,7 +105,7 @@ max-width: 100%;
  justify-content: space-evenly;
  font-weight: 100;
  border-radius: 10px;
- margin-top: 60px;
+ margin-top: 200px;
  margin-bottom: 20px;
  }
  
