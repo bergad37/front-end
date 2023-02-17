@@ -21,13 +21,14 @@ body {
  
  .navigation{
 	min-height:50px;
-	
+	display: block;
 	position:fixed;
 	z-index:2;
 	padding: 10px 30px 0px 30px;
 	background:#00c39fa0;
 	top:0px;
-    box-shadow: #282727;
+    border-radius:0px 60px 0px 10px;
+
 }
 .logo{
 	font-family: 'Montserrat', sans-serif;
@@ -76,11 +77,10 @@ body {
 	font-size:16px;
 }
 .navbar > .navbar-items >.navbar-nav > .nav-link{
-	display:block;
+	display:flex;
 	width:100%;
 	height:100%;
-	padding:3px;
-	line-height:44px;
+   padding: 0px 30px;
 	text-decoration:none;
 	color:#1b2a5c;
 }
@@ -98,7 +98,7 @@ body {
  .home-btn2{
     justify-content: space-evenly;
  }
- .description,.home-btns{
+ .description{
   
  display: flex;
 max-width: 100%;
@@ -144,6 +144,7 @@ max-width: 100%;
  
  
  .home-btns{
+    display: flex;
      border-radius: 0;
  }
  
@@ -229,8 +230,12 @@ max-width: 100%;
      display: flex;
      flex-direction: column;
      align-items: center;
+     
  }
  
+ .blog-container>.Blogs{
+    border: 2px solid rgba(0, 0, 0, 0.267);  ;
+ }
  .box,.message-box{
      display: flex;
      justify-content: center;
@@ -241,8 +246,18 @@ max-width: 100%;
     height: 50px;
     width: 50px;
  }
- 
- 
+
+ .blog-pic>img{
+    display: flex;
+    max-width: 100px;
+    max-height: 100%;
+ }
+ .blog-pic{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px 20px;
+    border: 3px dotted #2e32337e;
+ }
  /* .content{
      padding-top: 10px;
  } */
@@ -279,13 +294,19 @@ max-width: 100%;
      padding: 0 6px;
  }
  .container{
-     
- display:grid;
+    display:block;
+ }
+
+ /* This block should be visible on click the add blog button */
+
+ #blog-panel{
+     display: block;
  height: 50%;
  place-items: center;
  background-color: rgb(255, 255, 255);
  padding: 40px;
  border-radius: 5%;
+ margin-bottom: 20px;
  animation: 6s infinite alternate linear;
      }
  
@@ -469,7 +490,7 @@ max-width: 100%;
 
    
 .col-3>div{
-  margin: 0px 30px;
+  margin: 0px 30px 0px 0px;
 }
 
  footer{
@@ -577,6 +598,7 @@ section{
 	background:#5c5c5c4e;
 	display:flex;
 	justify-content:center;
+    padding-right: 20px;
 }
 #contact-adress ul li {
 	list-style-type:none;
@@ -626,7 +648,7 @@ section{
     .navbar >.navbar-items{
         padding:0px;
         position: relative;
-        right:0px;
+        right:1vw;
         width:100%;
         height:auto;
         
@@ -651,7 +673,7 @@ section{
         
     }
     .navbar > .navbar-items >.navbar-nav > .nav-link:hover{
-        background-color:#072052;
+        background-color:#aeaeae;
     }
 
 /*Profile section */
@@ -663,7 +685,9 @@ section{
     padding: 10px;
 
 }
-
+.project{
+    margin: 20px;
+}
     #contact-section{
 		height:130%;
 		
@@ -672,3 +696,61 @@ section{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Curd operation dashboard operation table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: rgba(245, 245, 245, 0.259);
+  }
+  
+  .post-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+  }
+  
+  .post-table th {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ccc;
+  }
+  
+  .post-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .post-table td:last-child {
+    text-align: center;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .edit-btn:hover, .delete-btn:hover {
+    background-color: #0056b3;
+  }
+  

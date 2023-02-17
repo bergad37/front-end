@@ -32,7 +32,7 @@
 
         <div>
       <h1>Login</h1>
-      <form onsubmit="return validatelog()">
+      <form id="login-form">
         <label for="">Admin Username</label><br>
         <input type="text" placeholder="Username" id="admin" >
         <div ><span class="exception1" ><p id="except1"></p></span></div>
@@ -42,7 +42,7 @@
 
 <!-- Once the password and username is correct ,admin is directed to dashboard        -->
 
-         <input type="submit"  value="Login">
+         <input type="submit"  value="Login" id="login-btn">
       </form>
                 <span style="padding: 2px 1px 0px 5px;text-align: end;font-size: smaller;"><p>Forgot password?</p></span>
                 
@@ -55,5 +55,5 @@
     </div>
     </div>
   </body>
-  <script src="./index.js"></script>
+  <script src="index.js"></script>
 </html>
