@@ -49,17 +49,17 @@
 
 
 
-// const emailInput = document.querySelector("#email");
+const emailInput = document.querySelector("#email");
 
-// emailInput.addEventListener("input", function(event) {
-//   let email = event.target.value;
-//   let isValid = /^[^@]+@[^@]+\.[a-z]+$/i.test(email);
-//   if (!isValid) {
-//     emailInput.style.border = "1px solid red";
-//   } else {
-//     emailInput.style.border = "1px solid green";
-//   }
-// });
+emailInput.addEventListener("input", function(event) {
+  let email = event.target.value;
+  let isValid = /^[^@]+@[^@]+\.[a-z]+$/i.test(email);
+  if (!isValid) {
+    emailInput.style.border = "1px solid red";
+  } else {
+    emailInput.style.border = "1px solid green";
+  }
+});
 
 
 
@@ -97,8 +97,6 @@ blg.messages=message.value;
 blogs.push(blg);
 localStorage.setItem('Blogs',JSON.stringify(blogs)); 
 }
-
-
 add.onclick=saveBlog;
 
 
