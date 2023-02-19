@@ -100,4 +100,13 @@ localStorage.setItem('Blogs',JSON.stringify(blogs));
 add.onclick=saveBlog;
 
 
+//Adding an event to  a navbar
+windows.addEventListener('scroll',function () {
+  if(windows.scrollY >150){
+    document.querySelector('#navbar').style.opacity=0.9;
 
+  }else{
+    document.querySelector('#navbar').style.opacacity=1;
+  }
+  
+});

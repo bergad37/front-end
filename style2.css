@@ -1,0 +1,250 @@
+/* Import  monstreat font */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0 0.75rem;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow:hidden;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.text-primary{
+    color: rgb(0, 255, 132);
+}
+
+.bg-light{
+    background: whitesmoke;
+    color: grey;
+}
+
+
+.bg-dark{
+background: grey;
+color: whitesmoke;
+}
+
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn{
+display: inline-block;
+background: greenyellow;
+padding: 0.5rem 2rem;
+border: none;
+border-radius: 5px;
+}
+
+.btn:hover{
+    background: rgb(114, 255, 114);
+}
+
+.btn-dark{
+    background: rgb(50, 50, 50);
+    color: white;
+}
+.bg-primary{
+    background: rgba(11, 153, 0, 0.711);
+    color: aliceblue;
+}
+
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: rgb(255, 250, 250) dotted 1px;
+}
+/* Nav Bar */
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background:grey;
+    color: aliceblue;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+
+}
+
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    padding:0.75rem;
+    margin: 0 0.25rem;
+
+}
+
+#navbar ul li a:hover{
+    background: green;
+    border-radius: 5px;
+}
+
+
+/* showcase style */
+
+#showcase{
+     background:black no-repeat center center/cover;  /* We have to add in the background image */
+height: 100vh;
+color: white;
+
+    }
+
+    #showcase .showcase-content{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem;
+
+       
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+background-color: rgba(0,0,0, 0.4);
+        /*overlay to cover the entire content*/
+    }
+
+
+    .py-1{
+        padding: 1.5rem 0;
+    }
+
+    .py-2{
+        padding: 3rem 0;
+    }
+
+    .py-3{
+        padding: 6rem 0;
+    }
+    .p-1{
+        padding: 1.5rem;
+    }
+
+    .p-2{
+        padding: 3rem;
+    }
+
+    .p-3{
+        padding: 6rem;
+    }
+    /* Work items styling */
+
+   #what .items {
+        display: flex;
+        padding: 1rem;
+    }
+    #what .items .item{
+        flex: 1;
+        text-align: center;
+padding: 1rem;
+    }
+
+/* adding circled background to each item */
+#what .items .item i{
+    background: lightseagreen ;
+    padding: 1rem;
+    border-radius: 50%;       /*Make it a circle*/
+margin-bottom:  1rem;
+}
+
+
+
+/* About me section */
+
+
+#who{
+    display: flex;
+}
+
+#who div{
+    flex: 1;  /* Divide the section into two equal parts,Equal sides in the divs inside who div*/
+}
+
+#who .who-img{
+    background: url('./Images/Background.jpg') no-repeat center center/cover;
+}
+
+
+/* The skills section */
+#skills .items{
+    display: flex;
+}
+
+#skills .items img{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+/* Contact section */
+#contact{
+    display: flex;
+}
+#contact .contact-form,#contact .subscribe{
+    flex: 1;
+}
+
+#contact .contact-form .form-group{
+    margin:0.75rem ;
+}
+
+#contact .contact-form label{
+    display: block;
+}
+
+#contact .contact-form input,#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+} 
