@@ -1,5 +1,5 @@
 /* Import  monstreat font */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 *{
     box-sizing: border-box;
@@ -42,7 +42,11 @@ p{
     color: grey;
 }
 
-
+.bg-darker{
+    background: rgb(39, 38, 38);
+    color: whitesmoke;
+    }
+    
 .bg-dark{
 background: grey;
 color: whitesmoke;
@@ -126,7 +130,7 @@ border-radius: 5px;
 }
 
 #navbar ul li a:hover{
-    background: green;
+    background: rgb(10, 206, 79);
     border-radius: 5px;
 }
 
@@ -232,7 +236,7 @@ margin-bottom:  1rem;
 }
 
 /* Contact section */
-#contact{
+#contact,.foot,.row{
     display: flex;
 }
 #contact .contact-form,#contact .subscribe{
@@ -251,27 +255,81 @@ margin-bottom:  1rem;
     width: 100%;
     padding: 0.5rem;
 } 
+#contact>div{
+    margin: 2px;
+}
+#contact{
+    background: rgba(180, 180, 180, 0.027);
+}
 
 /* features section */
 
 .box{
  float: left;
  width: 33.3%;
- padding: 10px;
+ padding: 8px;
  line-height: 1.5rem;
  text-align: center;
 
 
 }
-
-#feature{
+.box>h3,.box>p{
     max-width: 100%;
+    justify-content: center;
+}
+
+#features{
+    width: 100%;
     border: 1px rgb(62, 62, 62);
+    align-items: center;
 }
 #features>div{
-    margin: auto;
+    margin: 0;
 }
 .box img{
     margin-bottom: 10px;
 }
 
+/* footer */
+#main-footer{
+    display: flex;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.522);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 100%;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+.footer>div{
+    margin: 20%;
+  }
+  .row>div,#contact{
+   margin: 20px;
+
+  }
+  .col-sm-3 h5 ,.col-sm-3 p,.col-sm-3 a{
+    padding: 8px 0px;
+  }
+  .foot>input{
+    border-radius: 1px;
+    background:rgba(112, 112, 112, 0.267);
+    font-family:'Montserrat', sans-serif;
+  }
+.col-sm-3 a{
+    color: rgb(0, 170, 93);
+}
+
+.subscribe{
+    padding-top: 80px;
+    border-radius: 1.2rem;
+    justify-content: space-around;
+}
+
+.subscribe h3,.subscribe ul li{
+    color: rgba(255, 255, 255, 0.852);
+    border-bottom: none;
+    font-weight:bolder;
+    font-size: larger;
+    font-style:normal;
+}
