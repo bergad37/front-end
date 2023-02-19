@@ -43,13 +43,18 @@ p{
 }
 
 .bg-darker{
-    background: rgb(39, 38, 38);
+    background: rgba(39, 38, 38, 0.628);
     color: whitesmoke;
     }
     
 .bg-dark{
 background: grey;
 color: whitesmoke;
+}
+
+.bg-blue{
+    color: white;
+    background: rgb(3, 34, 55);;
 }
 
 .l-heading{
@@ -84,6 +89,10 @@ border-radius: 5px;
     background: rgb(50, 50, 50);
     color: white;
 }
+.text-alert{
+    color: red;
+}
+
 .bg-primary{
     background: rgba(11, 153, 0, 0.711);
     color: aliceblue;
@@ -186,6 +195,9 @@ background-color: rgba(0,0,0, 0.4);
     .p-3{
         padding: 6rem;
     }
+    .p-4{
+        padding: 10rem 30rem 2rem 30rem;
+    }
     /* Work items styling */
 
    #what .items {
@@ -199,13 +211,19 @@ padding: 1rem;
     }
 
 /* adding circled background to each item */
-#what .items .item i{
-    background: lightseagreen ;
+#what .items .item img{
+    max-width: 20%;
+    max-height: 40%;
+    background: rgb(1, 202, 179) ;
     padding: 1rem;
     border-radius: 50%;       /*Make it a circle*/
 margin-bottom:  1rem;
-}
 
+}
+.pic-size{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 
 /* About me section */
@@ -232,7 +250,8 @@ margin-bottom:  1rem;
 #skills .items img{
     display: block;
     margin: auto;
-    width: 40%;
+    max-width: 40%;
+    max-height: auto;
 }
 
 /* Contact section */
@@ -254,13 +273,25 @@ margin-bottom:  1rem;
 #contact .contact-form input,#contact .contact-form textarea{
     width: 100%;
     padding: 0.5rem;
-} 
+}
 #contact>div{
     margin: 2px;
 }
 #contact{
     background: rgba(180, 180, 180, 0.027);
 }
+
+/* validating the contact form with alert messages */
+#block-1{
+    display: none;
+}
+#block-2{
+    display: none;
+}
+#block-3{
+    display: none;
+}
+
 
 /* features section */
 
@@ -333,3 +364,68 @@ margin-bottom:  1rem;
     font-size: larger;
     font-style:normal;
 }
+
+.pictures{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+
+.container2 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    max-width:300px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  input[type="text"],
+  input[type="password"],input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 0px 10px;
+    background-color: #6be26b;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  #gmail,#fb,#git{
+    max-width: 100px;
+    max-height: 40px;
+    padding: 0px 20px;
+  }
+  .accounts{
+    display: flex;
+   justify-content: center;
+   margin-top: 0px;
+  }
+  label{
+ font-family: 'Montserrat', sans-serif;
+    font-size: smaller;
+    font-weight: bold;
+    padding: 5px auto;
+  }
+  h1{
+    font-family:  'Montserrat', sans-serif;
+  }

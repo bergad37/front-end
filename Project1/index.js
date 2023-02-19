@@ -46,23 +46,6 @@
 // });
 //   }
 
-
-
-
-const emailInput = document.querySelector("#email");
-
-emailInput.addEventListener("input", function(event) {
-  let email = event.target.value;
-  let isValid = /^[^@]+@[^@]+\.[a-z]+$/i.test(email);
-  if (!isValid) {
-    emailInput.style.border = "1px solid red";
-  } else {
-    emailInput.style.border = "1px solid green";
-  }
-});
-
-
-
 // Adding a blog panel visible
 // const blogbtn=document.querySelector("#add-blog")[0];
 // const panel=document.querySelector('#blog-panel')[0];
@@ -101,12 +84,3 @@ add.onclick=saveBlog;
 
 
 //Adding an event to  a navbar
-windows.addEventListener('scroll',function () {
-  if(windows.scrollY >150){
-    document.querySelector('#navbar').style.opacity=0.9;
-
-  }else{
-    document.querySelector('#navbar').style.opacacity=1;
-  }
-  
-});

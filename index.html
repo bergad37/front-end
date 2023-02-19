@@ -35,7 +35,7 @@
             <li><a href="#what">My work</a></li>
             <li><a href="#what">Blogs</a></li>
             <li><a href="#contact">Contact Me</a></li>
-            <li><a href="#what">Log in</a></li>
+            <li><a href="./login.html">Log in</a></li>
         </ul>
     </nav>
 
@@ -78,7 +78,7 @@
                 </span> Work</h2>
             <div class="items">
                 <div class="item">
-                    <i class="fas fa-university fa-2x"></i>
+                    <img src="./Images/iot.svg" alt="">
                     <div>
                         <h3>Flood forecasting system</h3>
                         <p>An IoT based system to alert people for flood occcurence
@@ -86,15 +86,16 @@
                     </div>
                 </div>
                 <div class="item">
-                    <i class="fas fa-book-reader fa-2x"></i>
+                <img src="./Images/parking.png" alt="">
                     <div>
+                        
                         <h3>Track N Book services</h3>
                         <p>An IoT based system to alert people for flood occcurence
                             prediciton before time</p>
                     </div>
                 </div>
                 <div class="item">
-                    <i class="fas fa-pencil-alt fa-2x"></i>
+                    <img src="./Images/parking.png" alt="">
                     <div>
                         <h3>Smart parking</h3>
                         <p>An IoT based system to alert people for flood occcurence
@@ -110,23 +111,24 @@
             <span class="text-primary"> Skills</span>
             Acquired
         </h2>
-        <div class="items" py-1>
-            <div><img src="./Images/js logo.svg.png" alt="skill"></div>
-            <div><img src="./Images/c++.png" alt="skill"></div>
-            <div><img src="./Images/figmaIcon.webp" alt="skill"></div>
-            <div><img src="./Images/canvamod.png" alt="skill"></div>
-            <div><img src="./Images/fluuutter.webp" alt="skill"></div>
-            <div><img src="./Images/canvamod.png" alt="skill"></div>
+        <div class="items py-3">
+            <div><img src="./Images/js logo.svg.png" alt="skill" class="pic-size"></div>
+            <div><img src="./Images/c++.png" alt="skill" class="pic-size"></div>
+            <div><img src="./Images/figmaIcon.webp" alt="skill" class="pic-size" id="figma"></div>
+            <div><img src="./Images/canvamod.png" alt="skill" class="pic-size"></div>
+            <div><img src="./Images/fluuutter.webp" alt="skill" class="pic-size" id="flutter"></div>
+            <div><img src="./Images/canvamod.png" alt="skill" class="pic-size"></div>
         </div>
     </section>
 
     <section id="features">
-        <div class="who text  py-2"> <!--padding all around p -->
+        <div class="who text  py-4"> <!--padding all around p -->
             <h2 class="m-heading text-center "><span class="text-primary">Recent
                 </span> blogs</h2>
         </div>
         <div class="box bg-light">
             <!-- add Images -->
+            <img src="./Images/SMART.jpeg" alt="" class="pictures">
             <h3>IT versus smart city
             </h3>
             <p>Lorem ipsum, dolor sit amet consectetur
@@ -135,23 +137,27 @@
         </div>
         <div class="box bg-dark">
             <!-- add Images -->
+            <img src="./Images/AI.jpeg" alt="" class="pictures">
             <h3>AI to take over dev's jobs</h3>
             <p>Lorem elit. Nostrum quasi tempore eius rerum minima, dolores quaerat voluptate voluptatum nemo culpa. Odio
                 accusantium inventore dolor.</p><span class="text-primary">-->Read more</span>
         </div>
         <div class="box bg-light">
-            add Images
+            <img src="./Images/cloudserver.webp" alt="" class="pictures">
             <h3>Cloud servers in Africa</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, laudantium rem! Voluptatum culpa
                 possimus corporis obcaecati autem. !</p><span class="text-primary">-->Read more</span>
         </div>
+       
     </section>
+   <div class="py-3 p-4"> <a href=""><input type="submit" id="blog-btn" value="More blogs" class="btn btn-dark"></a></div>
     <div class="clr"></div>
     <!-- contact form section -->
     <div class="who text  py-2"> <!--padding all around p -->
         <h2 class="m-heading text-center ">Contact<span class="text-primary"> Me
             </span> </h2>
     </div>
+    
     <section id="contact">
         <div class="subscribe text-center bg-darker">
             <h3>My address</h3> <br>
@@ -162,7 +168,22 @@
                 <li>Street number; st kN 733</li>
             </ul>
         </div>
+
         <div class="contact-form bg-primary p-2">
+        <!-- Blocks to pop up on invalid inputs -->
+            <div class="who text" id="block-1"> <!--padding all around p -->
+                <p class="text-center ">Invalid<span class="text-alert"> name
+                    </span> </p>
+            </div>
+            <div class="who text" id="block-2"> <!--padding all around p -->
+                <p class=" text-center ">Invalid<span class="text-alert"> email
+                    </span> </p>
+            </div>
+            <div class="who text" id="block-3"> <!--padding all around p -->
+                <p class=" text-center ">Invalid<span class="text-alert"> Phone number
+                    </span> </p>
+            </div>
+
             <h2 class="m-heading">Contact Us</h2>
             <p>Please use this form to contact me</p>
             <form action="">
@@ -173,7 +194,7 @@
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="name" placeholder="Email@account.com">
+                    <input type="email" name="email" id="email" placeholder="Email@account.com">
 
                 </div>
                 <div class="form-group">
@@ -182,11 +203,11 @@
 
                 </div>
                 <div class="form-group">
-                    <label for="phone">Message</label>
-                    <textarea name="message" id="name" placeholder="Compose the message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Compose the message">
                      </textarea>
                 </div>
-                <input type="submit" value="Send" class="btn btn-dark">
+                <input type="submit" id="btn" value="Send" class="btn btn-dark">
             </form>
         </div>
        
