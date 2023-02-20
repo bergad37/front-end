@@ -46,23 +46,6 @@
 // });
 //   }
 
-
-
-
-// const emailInput = document.querySelector("#email");
-
-// emailInput.addEventListener("input", function(event) {
-//   let email = event.target.value;
-//   let isValid = /^[^@]+@[^@]+\.[a-z]+$/i.test(email);
-//   if (!isValid) {
-//     emailInput.style.border = "1px solid red";
-//   } else {
-//     emailInput.style.border = "1px solid green";
-//   }
-// });
-
-
-
 // Adding a blog panel visible
 // const blogbtn=document.querySelector("#add-blog")[0];
 // const panel=document.querySelector('#blog-panel')[0];
@@ -84,7 +67,6 @@ const add=document.getElementById('newpost');
 console.log(add);
 console.log(message);
 console.log(date);
-
 blogs=JSON.parse(localStorage.getItem('Blogs')) || [];
 
 function saveBlog(){
@@ -95,11 +77,72 @@ blg.ttles=title.value;
 blg.dates=date.value;
 blg.messages=message.value;
 blogs.push(blg);
-localStorage.setItem('Blogs',JSON.stringify(blogs)); 
+
+var items=JSON.stringify(blogs);
+
+localStorage.setItem('Blogs',items); 
+
+
+
+
+//Creating a new blog
+
+
+
+ // Getting  a reference to the table body
+ var tableBody = document.querySelector("#my-table");
+
+ // Create a new row element
+ var newRow = document.createElement("tr");
+ // Create four new column elements
+ var titleCol = document.createElement("td");
+ var authorCol = document.createElement("td");
+ var dateCol = document.createElement("td");
+ var updateCol = document.createElement("td");
+ var deleteCol = document.createElement("td");
+
+ // Insert data into the new columns
+ titleCol.textContent = blg.ttles;
+ authorCol.textContent = blg.authors;
+ dateCol.textContent = blg.dates;
+
+ // Create update and delete buttons
+ var updateButton = document.createElement("button");
+ updateButton.textContent = "Edit";
+ updateButton.setAttribute('edit-btn');
+ var deleteButton = document.createElement("button");
+ deleteButton.textContent = "Delete";
+ updateButton.setAttribute('class','delete-btn');
+
+ // Add the buttons to the update and delete columns
+ updateCol.appendChild(updateButton);
+ deleteCol.appendChild(deleteButton);
+
+ // Add the columns to the new row
+ newRow.appendChild(titleCol);
+ newRow.appendChild(authorCol);
+ newRow.appendChild(dateCol);
+ newRow.appendChild(updateCol);
+ newRow.appendChild(deleteCol);
+
+ // Add the new row to the table body
+ tableBody.appendChild(newRow);
+}
+add.onclick=saveBlog;
+
+
+//Adding an event to  a navbar
+
+const deletebtn=document.getElementById('delete');
+const editbtn=document.getElementById('edit');
+const bloglist=document.getElementsByClassName('box');
+
+
+function deleteblog() {
+    console.log(bloglist);    
 }
 
-
-add.onclick=saveBlog;
+bloglist.onclick=deleteblog;
 
 
 
