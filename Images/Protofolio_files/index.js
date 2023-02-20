@@ -89,6 +89,8 @@ localStorage.setItem('Blogs',items);
 
 
 
+
+
  // Getting  a reference to the table body
  var tableBody = document.querySelector("#my-table");
 
