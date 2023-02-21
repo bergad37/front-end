@@ -15,38 +15,43 @@ window.addEventListener('scroll',function () {
   let email=document.querySelector('#email');
   let phone=document.querySelector('#phone');
   let message=document.querySelector('#message');
-  const sendbtn=document.getElementById('btn');
-  const block1=document.querySelector('#block-1');
-  const block2=document.querySelector('#bloc-2');
-  const block3=document.querySelector('#bloc-3');
-  let input1 = document.getElementById('admin');
-     let input2 = document.getElementById('passcode');
+  const sendbtn=document.getElementById('bt');
+  const logbtn=document.getElementById('login-btn')
+  const alert1=document.getElementById('alert1');
+  const alert2=document.getElementById('alert2');
+  const alert3=document.getElementById('alert3');
+  const alert4=document.getElementById('alert4');
+  const input1 = document.querySelector('admin');
+  const input2 = document.getElementById('passcode');
 
 
-//   function check() {
-//     if(name1.value=='' || name1.value.length<=3){
-// block1.style.display='block';
-//     }
-//     if(email.value=='' || email.value.length<=3){
-//         block2.style.display='block';
-//             }
-//             if(phone.value=='' || phone.value.length<=3){
-//                 block3.style.display='block';
-//                     }
-//   }
-//   sendbtn.onclick=check;
-
+  function check() {
+    if(name1.value=='' || name1.value.length<=3){
+alert1.style.display='block';
+    }
+    if(email.value=='' || email.value.length<=3){
+      alert2.style.display='block';
+            }
+            if(phone.value=='' || phone.value.length<=3){
+                alert1.style.display='block';
+                alert2.style.display='block';      
+              }
+              
+  }
+sendbtn.onclick=check;
 // hard coded password and username
   
 function logcheck() {
-    if(input1.value!=123 || input2.value!='GadBertrand'){
+    if(input1.value!=123 || input1.value==''){
         alert('The username or password is incorrect');
+        alert3.style.display='block';
     }
-    
+    if(input2.value!='Gad Bertrand' || input2==''){
+      alert4.style.display='block';
+    }
   }
+logbtn.onclick=logcheck;
 
-  const b=document.getElementById('login-btn');
-  b.onclick=logcheck;
 
 
 

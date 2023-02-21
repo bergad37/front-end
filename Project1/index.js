@@ -82,35 +82,34 @@ var items=JSON.stringify(blogs);
 
 localStorage.setItem('Blogs',items); 
 
-
-
-
+let ff=localStorage.getItem(Blogs[0]);
+console.log('hi')
 //Creating a new blog
 
 
 
  // Getting  a reference to the table body
- var tableBody = document.querySelector("#my-table");
+ var tableBody = document.getElementById('my-table');
 
  // Create a new row element
- var newRow = document.createElement("tr");
+ var newRow = document.createElement('tr');
  // Create four new column elements
- var titleCol = document.createElement("td");
- var authorCol = document.createElement("td");
- var dateCol = document.createElement("td");
- var updateCol = document.createElement("td");
- var deleteCol = document.createElement("td");
+ var titleCol = document.createElement('td');
+ var authorCol = document.createElement('td');
+ var dateCol = document.createElement('td');
+ var updateCol = document.createElement('td');
+ var deleteCol = document.createElement('td');
 
  // Insert data into the new columns
- titleCol.textContent = blg.ttles;
- authorCol.textContent = blg.authors;
- dateCol.textContent = blg.dates;
+ titleCol.textContent = localStorage.getItem(Blogs[0].ttles);
+ authorCol.textContent = localStorage.getItem(Blogs[0].authour);
+ dateCol.textContent = localStorage.getItem(Blogs[0].date);
 
  // Create update and delete buttons
- var updateButton = document.createElement("button");
+ var updateButton = document.createElement('button');
  updateButton.textContent = "Edit";
  updateButton.setAttribute('edit-btn');
- var deleteButton = document.createElement("button");
+ var deleteButton = document.createElement('button');
  deleteButton.textContent = "Delete";
  updateButton.setAttribute('class','delete-btn');
 

@@ -56,7 +56,7 @@
         <div class="who text bg-dark p-2"> <!--padding all around p -->
             <h2 class="m-heading"><span class="text-primary">About
 
-                </span> Me</h2>
+                </span>Me</h2>
             <p>A fresh graduate at the university of Rwanda.Having a bachelors degree in electronics and
                 telecommunication engineering and now enriching my software engineering skills </p><br>
             <h3>My address</h3> <br>
@@ -150,7 +150,7 @@
         </div>
        
     </section>
-   <div class="py-3 p-4"> <a href="./"><input type="submit" id="blog-btn" value="More blogs" class="btn btn-dark"></a></div>
+   <div class="py-3 p-4"> <a href="./Blog page.html"><input type="submit" id="blog-btn" value="More blogs" class="btn btn-dark"></a></div>
     <div class="clr"></div>
     <!-- contact form section -->
     <div class="who text  py-2"> <!--padding all around p -->
@@ -169,45 +169,31 @@
             </ul>
         </div>
 
-        <div class="contact-form bg-primary p-2">
-        <!-- Blocks to pop up on invalid inputs -->
-            <div class="who text" id="block-1"> <!--padding all around p -->
-                <p class="text-center ">Invalid<span class="text-alert"> name
-                    </span> </p>
-            </div>
-            <div class="who text" id="block-2"> <!--padding all around p -->
-                <p class=" text-center ">Invalid<span class="text-alert"> email
-                    </span> </p>
-            </div>
-            <div class="who text" id="block-3"> <!--padding all around p -->
-                <p class=" text-center ">Invalid<span class="text-alert"> Phone number
-                    </span> </p>
-            </div>
-
-            <h2 class="m-heading">Contact Us</h2>
+        <div class="contact-form  p-2">
+             <!-- Blocks to pop up on invalid inputs -->
+            <h2 class="m-heading"> Contact Us</h2>
             <p>Please use this form to contact me</p>
             <form action="">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="px-2">
+                    <!--padding all around p -->
+                    <p class="text-alert px-1 " id="alert1">Enter the name</p>
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Email@account.com">
-
-                </div>
-                <div class="form-group">
-                    <label for="Phone">Phone</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
-
+                 
+                    <input type="email" name="email" id="email" placeholder="Email@account.com" class="px-2">
+            <!--padding all around p -->
+            <p class="text-alert px-1" id="alert2">Invalid email</p>
+           
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea name="message" id="message" placeholder="Compose the message">
                      </textarea>
                 </div>
-                <input type="submit" id="btn" value="Send" class="btn btn-dark">
+                <input type="submit" id="bt" value="Send" class="btn btn-dark">
             </form>
         </div>
        

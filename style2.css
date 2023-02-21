@@ -234,11 +234,14 @@ margin-bottom:  1rem;
 }
 
 #who div{
-    flex: 1;  /* Divide the section into two equal parts,Equal sides in the divs inside who div*/
+    flex: 1; 
+ /* Divide the section into two equal parts,Equal sides in the divs inside who div*/
 }
 
 #who .who-img{
-    background: url('./Images/Background.jpg') no-repeat center center/cover;
+    background: url('./Images/profile2.png') no-repeat center center/cover;
+height: 50rem;
+margin-top: 5rem;
 }
 
 
@@ -282,17 +285,17 @@ margin-bottom:  1rem;
 }
 
 /* validating the contact form with alert messages */
-#block-1{
-    display: none;
-}
-#block-2{
-    display: none;
-}
-#block-3{
+.text-alert{
     display: none;
 }
 
-
+.px-1{
+    margin: 0;
+    font-size: 15px;
+}
+.px-2{
+    margin-bottom: 0px;
+}
 /* features section */
 
 .box{
@@ -389,7 +392,7 @@ margin-bottom:  1rem;
   input[type="password"],input[type="email"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-top: 10px;
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid #ccc;
