@@ -106,8 +106,8 @@ border-radius: 5px;
 }
 
 .list li{
-    padding: 0.5rem 0;
-    border-bottom: rgb(255, 250, 250) dotted 1px;
+    padding: 0.2rem 0;
+    border-bottom: rgb(255, 250, 250) 1px;
 }
 /* Nav Bar */
 
@@ -197,6 +197,10 @@ background-color: rgba(0,0,0, 0.4);
     }
     .p-4{
         padding: 10rem 30rem 2rem 30rem;
+    }
+    .m-5{
+        margin-top: 10rem ;
+        margin-left: 15rem;
     }
     /* Work items styling */
 
