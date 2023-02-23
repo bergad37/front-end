@@ -56,4 +56,15 @@ logbtn.onclick=logcheck;
 
 
 
-  
+  //
+  function cheeeeck(){
+  let nameee=document.getElementById('a');
+  let btnn=document.getElementById('d');
+
+
+  if(!nameee.value.includes('@')){
+alert('Invalid email');
+  }
+}
+
+btnn.onclick=cheeeeck;
