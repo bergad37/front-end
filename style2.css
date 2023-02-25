@@ -8,7 +8,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 line-height: 1.4;
 }
 
@@ -65,6 +65,9 @@ color: whitesmoke;
     background: rgb(3, 34, 55);;
 }
 
+.light-text{
+    font-weight: normal;
+}
 .l-heading{
     font-size: 4rem;
     margin-bottom: 0.75rem;
@@ -99,6 +102,10 @@ border-radius: 5px;
 }
 .text-alert{
     color: red;
+}
+
+.justify-text{
+   text-align: justify;
 }
 
 .bg-primary{
@@ -236,7 +243,9 @@ margin-bottom:  1rem;
     max-width: 100%;
     max-height: 100%;
 }
-
+.node-pic{
+    height: 200px;
+}
 
 /* About me section */
 
@@ -251,9 +260,9 @@ margin-bottom:  1rem;
 }
 
 #who .who-img{
-    background: url('./Images/profile2.png') no-repeat center center/cover;
-height: 50rem;
-margin-top: 5rem;
+    background-color: #91919173;
+    justify-content: space-around;
+    padding-top: 15rem;
 }
 
 

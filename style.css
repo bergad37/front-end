@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
      margin: 0;
      padding: 0;
-     background-image: url('./Images/Background.jpg');
+     background-image: url('http://drive.google.com/uc?export=view&id=1uwuBTHTx7DoJ1xl0CedtJNB2Yx4rKLb_');
      background-repeat:repeat-y;
      background-size: cover;
   
@@ -281,7 +281,7 @@ max-width: 100%;
  }
  .login-page{
      height: 100%;
-     background-image: url('./Images/Background.jpg');
+     background-image: url('http://drive.google.com/uc?export=view&id=1uwuBTHTx7DoJ1xl0CedtJNB2Yx4rKLb_');
      background-repeat: no-repeat;
      background-size: cover;
      display: grid;
@@ -293,14 +293,12 @@ max-width: 100%;
      justify-content: space-between;
      padding: 0 6px;
  }
- .container{
-    display:block;
- }
+ 
 
  /* This block should be visible on click the add blog button */
 
- #blog-panel{
-     display: block;
+ .container{
+    display: block;
  height: 50%;
  place-items: center;
  background-color: rgb(255, 255, 255);
@@ -394,7 +392,7 @@ max-width: 100%;
     display: flex;
    flex-direction: column;
  background-size: cover;
-   background-image: url('./Images/Background.jpg');
+   background-image: url('http://drive.google.com/uc?export=view&id=1uwuBTHTx7DoJ1xl0CedtJNB2Yx4rKLb_');
    background-repeat:repeat-y;
  padding: 0 60px;
  }

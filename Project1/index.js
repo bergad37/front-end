@@ -47,18 +47,18 @@
 //   }
 
 // Adding a blog panel visible
-// const blogbtn=document.querySelector("#add-blog")[0];
-// const panel=document.querySelector('#blog-panel')[0];
+const blogbtn=document.getElementById('add-blog');
+const panel=document.querySelector('#blog-panel');
 
-// console.log(blogbtn);
-// blogbtn.addEventListener("click",() =>{
-//   console.log(",,,,,,,,,,,,");
-//   //panel.classList.add("container");
-//   panel.style.display="block";
-// })
+function addblog() {
+    panel.classList.add('visiblee');
+    console.log(blogbtn);
+console.log(panel);
+}
 
+blogbtn.onclick=addblog;
 
-//Adding a blog to my table
+// Adding a blog to my table
 const author=document.getElementById('author');
 const title=document.getElementById('ttle');
 const date=document.getElementById('date');
@@ -130,18 +130,18 @@ console.log('hi')
 add.onclick=saveBlog;
 
 
-//Adding an event to  a navbar
+// //Adding an event to  a navbar
 
-const deletebtn=document.getElementById('delete');
-const editbtn=document.getElementById('edit');
-const bloglist=document.getElementsByClassName('box');
+// const deletebtn=document.getElementById('delete');
+// const editbtn=document.getElementById('edit');
+// const bloglist=document.getElementsByClassName('box');
 
 
-function deleteblog() {
-    console.log(bloglist);    
-}
+// function deleteblog() {
+//     console.log(bloglist);    
+// }
 
-bloglist.onclick=deleteblog;
+// bloglist.onclick=deleteblog;
 
 
 
