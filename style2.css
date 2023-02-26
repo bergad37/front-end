@@ -30,6 +30,9 @@ p{
     padding:30px 30px;
     
 }
+.icon-2 svg{
+    margin: 0 0.8rem;
+}
 .container{
     max-width: 1100px;
     margin: auto;
@@ -224,6 +227,7 @@ background-color: rgba(0,0,0, 0.4);
    #what .items {
         display: flex;
         padding: 1rem;
+        margin: 0 0.5rem;
     }
     #what .items .item{
         flex: 1;
@@ -324,9 +328,8 @@ margin-bottom:  1rem;
 .box{
  display: inline-block;
  justify-content: space-around;
- width: 32%;
- margin-right: 1%;
-  margin-bottom: 20px;
+ width: 33.1%;
+  margin: 10px 0px;
   vertical-align: top;
  padding: 8px;
  line-height: 1.5rem;
@@ -340,12 +343,12 @@ margin-bottom:  1rem;
 }
 
 #features{
-    width: 100%;
+    display: block;
     border: 1px rgb(62, 62, 62);
     align-items: center;
 }
 #features>div{
-    margin: 0;
+    margin: 10px 0pxx;
 }
 .box img{
     margin-bottom: 10px;
