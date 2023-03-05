@@ -325,13 +325,20 @@ margin-bottom:  1rem;
 }
 /* features section */
 
+
+.blogs{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
 .box{
  display: inline-block;
  justify-content: space-around;
- width: 33.1%;
-  margin: 10px 0px;
+  margin: 10px 10px;
   vertical-align: top;
  padding: 8px;
+ align-items: center;
  line-height: 1.5rem;
  text-align: center;
 
@@ -431,7 +438,7 @@ margin-bottom:  1rem;
   }
   input[type="submit"] {
     width: 100%;
-    padding: 0px 10px;
+    padding: 8px 10px;
     background-color: #6be26b;
     color: white;
     font-size: 16px;
