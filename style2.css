@@ -15,10 +15,6 @@ line-height: 1.4;
 a{
     text-decoration: none;
 }
-
-p{
-    margin: 0 0.75rem;
-}
 .photo{
     border-radius: 50%;
 }
@@ -285,7 +281,7 @@ margin-bottom:  1rem;
 }
 
 /* Contact section */
-#contact,.foot,.row{
+#contact{
     display: flex;
 }
 #contact .contact-form,#contact .subscribe{
@@ -328,6 +324,7 @@ margin-bottom:  1rem;
 
 .blogs{
     display: flex;
+    justify-content: center;
     width: 100%;
     flex-wrap: nowrap;
 }
@@ -364,7 +361,7 @@ margin-bottom:  1rem;
 /* footer */
 #main-footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background:rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 20px;
@@ -372,20 +369,12 @@ margin-bottom:  1rem;
     margin-top: 30px;
     line-height: 1.5;
 }
-.footer>div{
-    margin: 20%;
-  }
-  .row>div,#contact{
+  #contact{
    margin: 20px;
 
   }
   .col-sm-3 h5 ,.col-sm-3 p,.col-sm-3 a{
     padding: 8px 0px;
-  }
-  .foot>input{
-    border-radius: 1px;
-    background:rgba(112, 112, 112, 0.267);
-    font-family:'Montserrat', sans-serif;
   }
 .col-sm-3 a{
     color: rgb(0, 170, 93);
