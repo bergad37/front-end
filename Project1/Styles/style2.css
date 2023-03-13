@@ -60,7 +60,7 @@ a{
 background: grey;
 color: whitesmoke;
 }
-#alert-container{
+#alert-container,.styling{
     background: #6be26b5c;
     border-radius: 8px;
     padding: 10px;
@@ -317,6 +317,9 @@ margin-bottom:  1rem;
 #contact .contact-form input,#contact .contact-form textarea,#edit-blog textarea{
     width: 100%;
 }
+#contact .contact-form textarea,#edit-blog textarea{
+    height: 200px;
+}
 #contact>div{
     margin: 2px;
 }
@@ -448,6 +451,7 @@ margin-bottom:  1rem;
   }
   input[type="submit"] {
     width: 100%;
+    margin: 8px 0;
     padding: 8px 10px;
     background-color: #6be26b;
     color: white;

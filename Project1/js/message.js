@@ -31,7 +31,7 @@ body:JSON.stringify(data)
    return response.json();
 })
 .then((data) => {
-    alarm.textContent=result.message;  
+    alarm.textContent=data.message;  
         box.style.display="block";
     console.log(data)
 })

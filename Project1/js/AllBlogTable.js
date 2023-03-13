@@ -4,8 +4,8 @@ const box=document.getElementById("alert-container");
 
 
 
-const blogTable=document.getElementById("blog-table");
-
+const blogTable=document.getElementById("elements");
+console.log(blogTable);
 fetch('http://localhost:2000/api/v1/blogs')
 .then((result) => {
     return result.json();
@@ -14,43 +14,80 @@ fetch('http://localhost:2000/api/v1/blogs')
     console.log(result)
    result.data.forEach(result => {
 
-    console.log(result._id);
-    const row=document.createElement("tr");
+    // console.log(result._id);
+    const row=document.createElement("section");
+    row.classList.add("who");
     row.id = `result-${result._id}`;
-    const postDate=document.createElement("td");
-    const title=document.createElement("td");
-    const author=document.createElement("td");
-    const content=document.createElement("td");
-    const image=document.createElement("td");
-    const action=document.createElement("td");
-    const deleteButton=document.createElement("button");
+    
+    const postDate=document.createElement("h4");
+    
+    const image=document.createElement("div");
+    image.classList.add("who-img");
+
+
     const imagesource=document.createElement("img");
+    image.appendChild(imagesource);
+
+
+    const body=document.createElement("div")
+    body.classList.add("who","text","bg-darker","p-2","y-1");
+    
+
+
+    const title=document.createElement("h2");
+    title.classList.add("py-1","p-1");
+    body.appendChild(title);
+
+
+    const content=document.createElement("p");
+    content.classList.add("light-text","justify-text","list","p-1");
+    body.appendChild(content);
+
+    const author=document.createElement("p");
+    author.classList.add("light-text","justify-text","list","p-1");
+    body.appendChild(author);
+   
+
+
+    const action=document.createElement("div");
+    const deleteButton=document.createElement("button");
+    action.append(deleteButton);
+   
+
      const update=document.createElement("button");
-      image.appendChild(imagesource);
+     action.appendChild(update);
+
+
+
+
+      
 
       //set the values
       imagesource.src=result.imageUrl;
       postDate.textContent=result.postedAt;
       title.textContent=result.title;
-      author.textContent=result.Author;
+      author.textContent='Author: '+result.Author;
       content.textContent=result.message;
       deleteButton.textContent='Delete post';
       update.textContent='Update post';
       action.appendChild(deleteButton)
       action.appendChild(update);
 
-      row.appendChild(postDate);
       row.appendChild(image);
-      row.appendChild(title);
-      row.appendChild(author);
-      row.appendChild(content);
+      row.appendChild(body);
       row.appendChild(action);
+      
       
       blogTable.appendChild(row);
 //Deleting a blog
       deleteButton.addEventListener("click", function() {
         deleteBlog(result._id);
+
       });
+      update.addEventListener("click",function(){
+        const IdToBeUpdated=localStorage.setItem("id",result._id);
+        location.href="Project1/Pages/subpages/blogpanel.html";
+      })
    });
 })
 .catch((error)=>{
@@ -82,28 +119,6 @@ function deleteBlog(blogId){
         console.log(err);
     });
 }
-
-//draft
-// const editForm=document.getElementById("edit-blog")
-// function updateBlog(blogId,updatedData){
-//     fetch(`http://127.0.0.1:2000/api/v1/blogs/${blogId}`,{
-//         method:"PUT",
-//         headers:{
-//             "Content-Type":"application/json"
-//         }
-//     })
-//     .then((result) => {
-//         return result.json(); 
-//     })
-//     .then((result)=>{
-//         console.log(result)
-//         alarm.textContent=result.message;  
-//         box.style.display="block";
-//     })
-//     .catch((err) => {
-//         console.log(err);
-//     });
-// }
 
 
 

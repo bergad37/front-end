@@ -436,8 +436,8 @@ max-width: 100%;
    input[type="submit"]:hover {
      background-color: #3e8e41;
    }
-   textarea{
-    max-height: 200px;
+   #add-blog textarea{
+    height: 200px;
    }
  
    #gmail,#fb,#git{
