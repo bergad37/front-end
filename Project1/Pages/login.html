@@ -17,13 +17,13 @@
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../Styles/style2.css">
 
     <title>Login Page</title>
    
   </head>
   <body>
-    <div class="" style="display:flex;align-items: flex-start;margin: 20px 20px;"><a href="/index.html">
+    <div class="" style="display:flex;align-items: flex-start;margin: 20px 20px;"><a href="../Pages/index.html">
 
       <h1 class="logo">
         <span class="text-primary">
@@ -33,17 +33,21 @@
   </a>
 </div>
     <div class="container2">
-
+     
         <div>
-      <h1>Login</h1>
+      <h1 class="py-1">Login</h1>
+
+      <div id="alert-container" class="py-1" style="display: none;">
+          <p class="" id="alarm"></p>
+      </div>
       <form id="login-form">
-        <label for="">Admin Username</label><br>
-        <input type="text" placeholder="Username" id="admin"  >
+        <label for="">E-mail</label><br>
+        <input type="email" placeholder="username@account.com" id="usermail" class="py-4">
 
         <p class="text-alert px-1 " id="alert3">Wrong username</p>
 
         <label for="">Password</label>
-        <input type="password" placeholder="Password" id="passcode">
+        <input type="password" placeholder="Password" id="password" class="py-4">
 
         <p class="text-alert px-1 " id="alert4">Wrong password</p>
         
@@ -51,8 +55,8 @@
          <input type="submit"  value="Login" id="login-btn">
       </form>
                 <span style="padding: 2px 1px 0px 5px;text-align: end;font-size: smaller;"><p>Forgot password?</p></span>
-                
-        <div> <span style="color: grey;font-size: smaller;text-align: center;"><p>Or sign Up with</p></span></div>
+                <p>Don't have account?</p>        
+        <div><a href="./signup.html" style="color: grey;font-size: smaller;text-align: center;" class="py-2">Sign Up</a></div>
                 <div class="accounts">       
         <img src="http://drive.google.com/uc?export=view&id=12-_bKiPjlubzwQsZVdrKNfs0yGrDaL0Y" alt="" id="gmail">
         <img src="http://drive.google.com/uc?export=view&id=1ZuiSbuyVkYg0wET-qa_JvjHxH7Fqda3u" alt="" id="fb">
@@ -61,5 +65,5 @@
     </div>
     </div>
   </body>
-  <script src="./index2.js"></script>
+  <script src="../js/login.js"></script>
 </html>

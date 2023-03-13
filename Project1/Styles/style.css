@@ -19,6 +19,9 @@ body {
      text-decoration: none;
  }
  
+ .py-1{
+    margin: 0.6rem 0;
+ }
  .navigation{
 	min-height:50px;
 	display: block;
@@ -399,7 +402,6 @@ max-width: 100%;
    .container2 {
      font-family: Arial, sans-serif;
      font-size: 16px;
-     max-width:300px;
      margin: 100px auto;
      padding: 30px;
      background-color: white;
@@ -422,9 +424,9 @@ max-width: 100%;
      
    }
    input[type="submit"] {
-     width: 100%;
-     padding: 0px 10px;
-     background-color: #4CAF50;
+     max-width: 80%;
+     padding: 10px 10px;
+     background-color: #5bc25e;
      color: white;
      font-size: 16px;
      border-radius: 8px;
@@ -433,6 +435,9 @@ max-width: 100%;
    }
    input[type="submit"]:hover {
      background-color: #3e8e41;
+   }
+   textarea{
+    max-height: 200px;
    }
  
    #gmail,#fb,#git{
@@ -752,3 +757,15 @@ section{
     background-color: #0056b3;
   }
   
+
+  #logout-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
