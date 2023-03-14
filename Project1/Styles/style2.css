@@ -60,7 +60,7 @@ a{
 background: grey;
 color: whitesmoke;
 }
-#alert-container,.styling{
+#alert-container,#alert{
     background: #6be26b5c;
     border-radius: 8px;
     padding: 10px;

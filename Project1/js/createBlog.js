@@ -1,12 +1,13 @@
 //Dialog box
-const alarm=document.getElementById("alarm");
-const box=document.getElementById("alert-container");
+const alarmBox=document.getElementById("alert2");
+const box=document.getElementById("alert");
 //logout button
 const logout=document.getElementById("logout-button");
 
 const addBlog=document.getElementById("add-blog");
 console.log(addBlog);
-
+console.log(alarmBox)
+console.log(box);
 
 const title=document.getElementById("ttle");
 const Author=document.getElementById("author");
@@ -14,6 +15,11 @@ const message=document.getElementById("content");
 
 const img=document.getElementById("image1");
 img.classList.add("pictures");
+
+
+
+
+
 // HANDLING IMAGE UPLOAD
 let file = null;
 img.addEventListener("change", (e) => {
@@ -24,6 +30,8 @@ reader.onload = () => {
 file = reader.result;
 };
 });
+
+//Handling image
 addBlog.addEventListener("submit",(e)=>{
     e.preventDefault();
 
@@ -41,7 +49,7 @@ const data={title:title.value,Author:Author.value,message:message.value,imageUrl
         return result.json();
     })
     .then((result)=>{
-        alarm.textContent=result.message;  
+        alarmBox.textContent=result.message;  
         box.style.display="block";
         console.log(result)
     })

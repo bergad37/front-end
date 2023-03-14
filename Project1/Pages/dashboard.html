@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +23,13 @@
 </head>
 
 <body>
-    <button id="logout-button">Logout</button>
+       
+    <a href="../dashboard.html"> <h1 class="logo">
+        <span class="text-primary">
+        Dashboard
+        </span>
+    </h1></a>
+    <button id="logout-button" class="p-1">Logout</button>
     <div class="">
             <div class="foot">
                 <div class="row">
@@ -49,15 +54,6 @@
                         </div>
                     </div>
                     <div class="settings">
-                        
-                    <div class="col-5" ">
-                        
-                       <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path d="M8.686 4l2.607-2.607a1 1 0 0 1 1.414 0L15.314 4H19a1 1 0 0 1 1 1v3.686l2.607 2.607a1 1 0 0 1 0 1.414L20 15.314V19a1 1 0 0 1-1 1h-3.686l-2.607 2.607a1 1 0 0 1-1.414 0L8.686 20H5a1 1 0 0 1-1-1v-3.686l-2.607-2.607a1 1 0 0 1 0-1.414L4 8.686V5a1 1 0 0 1 1-1h3.686zM6 6v3.515L3.515 12 6 14.485V18h3.515L12 20.485 14.485 18H18v-3.515L20.485 12 18 9.515V6h-3.515L12 3.515 9.515 6H6zm6 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="rgba(236,240,241,1)"/></svg></span>
-                        <div style="padding-left: 10px;color: rgb(255, 255, 255);">
-                            <h2>Skills</h2>
-                            <a href="#">3</a>
-                        </div>
-                    </div>
                     <a href="">
                     <div class="col-6" ">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path d="M14.45 19L12 22.5 9.55 19H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-6.55z" fill="rgba(25,82,207,1)"/></svg>
@@ -87,8 +83,8 @@
                         </div>
                     </div></a>
                     <section class="container2">
-                        <div id="alert-container" style="display: none;padding: 1.5rem 0;">
-                            <p class="" id="alarm"></p>
+                        <div id="alert" style="display: block;padding: 1.5rem 0;">
+                            <p class="" id="alert2"></p>
                         </div>
                    <form action="" id="add-blog">
                             <h2>New blog</h2>

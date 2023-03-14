@@ -2,7 +2,8 @@
 const alarm=document.getElementById("alarm");
 const box=document.getElementById("alert-container");
 
-
+console.log(alarm);
+console.log(box);
 
 const blogTable=document.getElementById("elements");
 console.log(blogTable);
@@ -81,12 +82,14 @@ fetch('http://localhost:2000/api/v1/blogs')
       blogTable.appendChild(row);
 //Deleting a blog
       deleteButton.addEventListener("click", function() {
+        if(localStorage.getItem('authtoken')!=""){
         deleteBlog(result._id);
-
+        }else
+        alert('You are not logged in')
       });
       update.addEventListener("click",function(){
         const IdToBeUpdated=localStorage.setItem("id",result._id);
-        location.href="Project1/Pages/subpages/blogpanel.html";
+        location.href="../Pages/subpages/blogpanel.html";
       })
    });
 })
