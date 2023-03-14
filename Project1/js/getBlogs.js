@@ -1,12 +1,12 @@
 const subContainer=document.getElementById("elements");
 
-fetch('http://localhost:2000/api/v1/comments')
+fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/comments')
 .then((result) => {
     return result.json();
 })
 .then((result)=>{
     const allPost=result.data;
-console.log(allPost)
+
    allPost.forEach(result => {
 
     const row=document.createElement("div");

@@ -8,18 +8,17 @@ const img=document.getElementById("image");
 const updateButton=document.getElementById("update-btn");
 // const savedId=localStorage.getItem('id');
 
-fetch(`http://127.0.0.1:2000/api/v1/blogs/${localStorage.getItem('id')}`)
+fetch(`https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs/${localStorage.getItem('id')}`)
 .then((result) => {
     return result.json()
 }).then((result) => {
-     console.log(result);
-
-   
+    
     const row=document.createElement("section");
     row.classList.add("who");
     //row.id = `result-${result.data._id}`;
     
     const postDate=document.createElement("h4");
+    
     
     const image=document.createElement("div");
     image.classList.add("who-img","center");
@@ -61,7 +60,6 @@ fetch(`http://127.0.0.1:2000/api/v1/blogs/${localStorage.getItem('id')}`)
 
       box.appendChild(row);
 
-
       titlebox.value=result.data.title;
       contentb.textContent=result.data.message;
 
@@ -85,7 +83,7 @@ updateButton.addEventListener("click", (e) => {
         message: contentb.value,
         imageUrl: file
     };
-    fetch(`http://127.0.0.1:2000/api/v1/blogs/${localStorage.getItem('id')}`, {
+    fetch(`https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs/${localStorage.getItem('id')}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
@@ -96,6 +94,9 @@ updateButton.addEventListener("click", (e) => {
         return result.json()
     })
     .then((result) => {
-        console.log(result);
+        alert.log(result);
+    })
+    .catch((err)=>{
+        console.log(err)
     })
 });

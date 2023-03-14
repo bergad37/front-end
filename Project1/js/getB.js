@@ -1,12 +1,12 @@
 
 const subContainer=document.getElementById("sub");
 const blogs=document.getElementById("BLOGS");
-fetch('http://localhost:2000/api/v1/blogs')
+fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs')
 .then((result) => {
     return result.json();
 })
 .then((result)=>{
-    console.log(result.data.slice(-3));
+   
     // Attaching to the blog slot on landing page
     const lastThreePosts=result.data.slice(-3);
     const allPost=result.data;

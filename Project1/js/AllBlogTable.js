@@ -2,17 +2,16 @@
 const alarm=document.getElementById("alarm");
 const box=document.getElementById("alert-container");
 
-console.log(alarm);
-console.log(box);
+
 
 const blogTable=document.getElementById("elements");
-console.log(blogTable);
-fetch('http://localhost:2000/api/v1/blogs')
+
+fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs')
 .then((result) => {
     return result.json();
 })
 .then((result)=>{
-    console.log(result)
+   
    result.data.forEach(result => {
 
    
@@ -103,7 +102,7 @@ fetch('http://localhost:2000/api/v1/blogs')
 
 function deleteBlog(blogId){
     const token=localStorage.getItem('authtoken');//Get the token of loged user from the database
-    fetch(`http://127.0.0.1:2000/api/v1/blogs/${blogId}`,{
+    fetch(`https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs/${blogId}`,{
         method:"DELETE",
         headers:{
             'Authorization':`Bearer ${token}`
@@ -114,7 +113,7 @@ function deleteBlog(blogId){
 
     })
     .then((result)=>{
-        console.log(result)
+      
         alarm.textContent=result.message;  
         box.style.display="block";
         if(result.ok){
@@ -123,7 +122,7 @@ function deleteBlog(blogId){
         }
     })
     .catch((error) => {
-        console.error(error);
+        
         // Create an error message to show the user
         const errorMessage = document.createElement("p");
         errorMessage.textContent = "Failed to delete blog";

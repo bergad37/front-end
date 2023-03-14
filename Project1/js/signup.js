@@ -20,8 +20,8 @@ const data={
     email:email,
     password:password,
 }
-console.log(data)
-fetch('http://127.0.0.1:2000/api/v1/signup',
+
+fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/signup',
 {
 method:"POST",
 headers:{

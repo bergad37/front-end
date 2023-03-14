@@ -37,8 +37,8 @@ addBlog.addEventListener("submit",(e)=>{
 
 
 const data={title:title.value,Author:Author.value,message:message.value,imageUrl:file};
-     console.log(data);
-    fetch('http://127.0.0.1:2000/api/v1/blogs',{
+    
+    fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs',{
         method:"POST",
         headers:{
             "Content-Type":"application/json"

@@ -19,7 +19,7 @@ const data={
 }
 
 
-fetch('http://localhost:2000/api/v1/comments',
+fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs',
 {
 method:"POST",
 headers:{
@@ -33,7 +33,7 @@ body:JSON.stringify(data)
 .then((data) => {
     alarm.textContent=data.message;  
         box.style.display="block";
-    console.log(data)
+   
 })
 .catch((err)=>{
     alert(err)
