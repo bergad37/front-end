@@ -37,6 +37,6 @@ body:JSON.stringify(data)
   alert(result.message) ;
 })
 .catch((err)=>{
-    console.log(err);
+    window.alert(err);
 })
 })

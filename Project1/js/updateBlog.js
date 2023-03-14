@@ -53,7 +53,7 @@ fetch(`http://127.0.0.1:2000/api/v1/blogs/${localStorage.getItem('id')}`)
       imagesource.src=result.data.imageUrl;
       postDate.textContent=result.data.postedAt;
       title.textContent=result.data.title;
-      author.textContent='Author: '+result.Author;
+      author.textContent='Author: '+result.data.Author;
       content.textContent=result.data.message;
       row.appendChild(image);
       row.appendChild(body);
@@ -77,9 +77,8 @@ img.addEventListener("change", (e) => {
     file = reader.result;
     };
     });
-    
+
 updateButton.addEventListener("click", (e) => {
-    e.preventDefault();
    
     const blogData = {
         title: titlebox.value,

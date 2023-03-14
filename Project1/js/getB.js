@@ -1,4 +1,4 @@
-// const blogContainer=document.getElementById("features");
+
 const subContainer=document.getElementById("sub");
 const blogs=document.getElementById("BLOGS");
 fetch('http://localhost:2000/api/v1/blogs')
@@ -38,7 +38,7 @@ lastThreePosts.forEach(post => {
 
 })
 .catch((error)=>{
-    console.log(error)
+    alert(error)
 })
 
 

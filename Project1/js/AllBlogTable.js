@@ -15,7 +15,7 @@ fetch('http://localhost:2000/api/v1/blogs')
     console.log(result)
    result.data.forEach(result => {
 
-    // console.log(result._id);
+   
     const row=document.createElement("section");
     row.classList.add("who");
     row.id = `result-${result._id}`;
@@ -58,11 +58,6 @@ fetch('http://localhost:2000/api/v1/blogs')
      const update=document.createElement("button");
      action.appendChild(update);
 
-
-
-
-      
-
       //set the values
       imagesource.src=result.imageUrl;
       postDate.textContent=result.postedAt;
@@ -82,14 +77,23 @@ fetch('http://localhost:2000/api/v1/blogs')
       blogTable.appendChild(row);
 //Deleting a blog
       deleteButton.addEventListener("click", function() {
-        if(localStorage.getItem('authtoken')!=""){
+        if (confirm("Are you sure you want to delete this blog?")){
         deleteBlog(result._id);
-        }else
-        alert('You are not logged in')
+        }
+        if (!localStorage.getItem('authtoken')) {
+            alert("You need to log in first");
+            location.href="/Project1/Pages/login.html"
+            return;
+          }
       });
+      //updating the blog
       update.addEventListener("click",function(){
+        if (!localStorage.getItem('authtoken')) {
+            alert("You need to log in first");
+            return;
+          }
         const IdToBeUpdated=localStorage.setItem("id",result._id);
-        location.href="../Pages/subpages/blogpanel.html";
+        location.href="/Project1/Pages/editBlog.html";
       })
    });
 })
@@ -118,9 +122,15 @@ function deleteBlog(blogId){
         deletedRow.parentNode.removeChild(deletedRow);
         }
     })
-    .catch((err) => {
-        console.log(err);
-    });
+    .catch((error) => {
+        console.error(error);
+        // Create an error message to show the user
+        const errorMessage = document.createElement("p");
+        errorMessage.textContent = "Failed to delete blog";
+        errorMessage.classList.add("error-message");
+        // Append the error message to the page
+        box.appendChild(errorMessage);
+      });
 }
 
 

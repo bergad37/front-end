@@ -35,7 +35,7 @@ file = reader.result;
 addBlog.addEventListener("submit",(e)=>{
     e.preventDefault();
 
-// console.log(file);
+
 const data={title:title.value,Author:Author.value,message:message.value,imageUrl:file};
      console.log(data);
     fetch('http://127.0.0.1:2000/api/v1/blogs',{
@@ -49,12 +49,11 @@ const data={title:title.value,Author:Author.value,message:message.value,imageUrl
         return result.json();
     })
     .then((result)=>{
-        alarmBox.textContent=result.message;  
+        alarmBox.textContent=result.Message;  
         box.style.display="block";
-        console.log(result)
     })
     .catch((err) => {
-        console.log(err)
+        alert(err)
     });
 })
 

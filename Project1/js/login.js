@@ -35,6 +35,6 @@ body: JSON.stringify(data)
     }
 })
 .catch((err) => {
-    console.log(err)
+    alert(err)
 });
 })

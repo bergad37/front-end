@@ -17,7 +17,7 @@ const data={
     email:email,
     message:message
 }
-//console.log(JSON.stringify(data))
+
 
 fetch('http://localhost:2000/api/v1/comments',
 {
@@ -34,5 +34,8 @@ body:JSON.stringify(data)
     alarm.textContent=data.message;  
         box.style.display="block";
     console.log(data)
+})
+.catch((err)=>{
+    alert(err)
 })
 })
