@@ -410,7 +410,6 @@ margin-bottom:  1rem;
     border-radius: 1.2rem;
     justify-content: space-around;
 }
-
 .subscribe h3,.subscribe ul li{
     color: rgba(255, 255, 255, 0.852);
     border-bottom: none;
@@ -468,24 +467,6 @@ margin-bottom:  1rem;
     max-height: 40px;
     padding: 0px 20px;
   }
-  #blog-table td, #sub-table td {
-    padding: 10px;
-  }
-  #blog-table , #sub-table{
-    border-spacing: 0 10px;
-  }
-  #blog-table thead th ,#sub-table thead th{
-    background-color: #eee;
-    font-weight: bold;
-  }
-  
-  #blog-table tbody tr:hover,#sub-table tbody tr {
-    background-color: #f5f5f5;
-  }
-
-  #blog-table td, #blog-table th,#sub-table td,#sub-table th {
-    border: 1px solid #ddd;
-  }
   .accounts{
     display: flex;
    justify-content: center;
@@ -504,11 +485,9 @@ margin-bottom:  1rem;
   .nbr{
    color: black;
   }
-
   .nbr:hover{
 color: white;
   }
-
   .subs{
     display: flex;
     flex-direction: column;
@@ -524,3 +503,9 @@ color: white;
     box-shadow: 0 0 10px #ccc;
     justify-content: space-evenly;
   }
+
+  
+
+
+
+

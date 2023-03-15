@@ -76,19 +76,20 @@ fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs')
       blogTable.appendChild(row);
 //Deleting a blog
       deleteButton.addEventListener("click", function() {
-        if (confirm("Are you sure you want to delete this blog?")){
-        deleteBlog(result._id);
-        }
-        if (!localStorage.getItem('authtoken')) {
+        if (!localStorage.getItem('authtoken') || localStorage.getItem('role')){
             alert("You need to log in first");
             location.href="/Project1/Pages/login.html"
             return;
           }
+        if (confirm("Are you sure you want to delete this blog?")){
+        deleteBlog(result._id);
+        }    
       });
       //updating the blog
       update.addEventListener("click",function(){
-        if (!localStorage.getItem('authtoken')) {
+        if (!localStorage.getItem('authtoken') || localStorage.getItem('role')) {
             alert("You need to log in first");
+            location.href="/Project1/Pages/login.html"
             return;
           }
         const IdToBeUpdated=localStorage.setItem("id",result._id);

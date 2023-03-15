@@ -26,6 +26,7 @@ body: JSON.stringify(data)
 .then(result=>{
     if(result.ok){
         localStorage.setItem("authtoken",result.validToken);
+        localStorage.setItem("role",result.data.isAdmin)
         location.href="../Pages/dashboard.html"
     }
     else{
