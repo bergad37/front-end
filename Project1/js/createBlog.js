@@ -60,5 +60,5 @@ const data={title:title.value,Author:Author.value,message:message.value,imageUrl
 logout.addEventListener("click",(event)=>{
     event.preventDefault();
     localStorage.clear();
-    window.location.href="/index.html"
+    location.href="/index.html"
 })
