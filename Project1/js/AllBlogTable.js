@@ -83,6 +83,7 @@ fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs')
           }
         if (confirm("Are you sure you want to delete this blog?")){
         deleteBlog(result._id);
+        location.reload();
         }    
       });
       //updating the blog
