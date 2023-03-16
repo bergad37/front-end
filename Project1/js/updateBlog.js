@@ -94,6 +94,7 @@ updateButton.addEventListener("click", (e) => {
         return result.json()
     })
     .then((result) => {
+        console.log(result);
         notifyContent.textContent=result.message;
         notificationBox.style.display="block";
     })
