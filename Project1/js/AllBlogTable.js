@@ -87,7 +87,7 @@ fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs')
       });
       //updating the blog
       update.addEventListener("click",function(){
-        if (!localStorage.getItem('authtoken') || localStorage.getItem('role')) {
+        if (!localStorage.getItem('authtoken')) {
             alert("You need to log in first");
             location.href="/Project1/Pages/login.html"
             return;

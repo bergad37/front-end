@@ -1,5 +1,6 @@
  const box=document.getElementById("elements");
-
+const notificationBox=documentt.getElementById("alert-container");
+const notifyContent=document.getElementById("alarm");
 const editForm=document.getElementById("edit-blog");
 const titlebox=document.getElementById("ttle");
 const contentb=document.getElementById("content");
@@ -77,7 +78,6 @@ img.addEventListener("change", (e) => {
     });
 
 updateButton.addEventListener("click", (e) => {
-   
     const blogData = {
         title: titlebox.value,
         message: contentb.value,
@@ -94,7 +94,8 @@ updateButton.addEventListener("click", (e) => {
         return result.json()
     })
     .then((result) => {
-        alert.log(result.data.message);
+        notifyContent.textContent=result.data.message;
+        notificationBox.style.display="block";
     })
     .catch((err)=>{
         console.log(err)
