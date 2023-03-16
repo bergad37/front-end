@@ -1,5 +1,5 @@
  const box=document.getElementById("elements");
-const notificationBox=documentt.getElementById("alert-container");
+const notificationBox=document.getElementById("alert-container");
 const notifyContent=document.getElementById("alarm");
 const editForm=document.getElementById("edit-blog");
 const titlebox=document.getElementById("ttle");
