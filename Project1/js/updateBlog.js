@@ -19,7 +19,7 @@ fetch(`https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs/${localStorage.ge
     
     const postDate=document.createElement("h4");
     
-    
+
     const image=document.createElement("div");
     image.classList.add("who-img","center");
 
@@ -94,7 +94,7 @@ updateButton.addEventListener("click", (e) => {
         return result.json()
     })
     .then((result) => {
-        alert.log(result);
+        alert.log(result.data.message);
     })
     .catch((err)=>{
         console.log(err)
