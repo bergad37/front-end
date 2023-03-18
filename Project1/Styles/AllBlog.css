@@ -1,113 +1,191 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
-body,h2,p{
+body,
+h2,
+p {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-
 }
+
+
 /* nav bar css */
-a{
+
+a {
     text-decoration: none;
 }
-#showcase{
+
+#showcase {
     height: 100vh;
     color: white;
 }
-.showcase-content{
-display: flex;
-flex-direction: column;
-text-align: center;
-justify-content: center;
-height: 100%;
-align-items: center;
-padding: 0 2rem;
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    padding: 0 2rem;
 }
 
-.showcase-content button{
+.showcase-content button {
     margin: 0.5rem;
     padding: 0.75rem 1.3rem;
     border-radius: 8px;
     border: none;
 }
 
-.l-btn{
+.l-btn {
     background: rgb(59, 243, 92);
 }
-.h-btn{
-    background: rgb(51, 178, 1) ;
+
+.h-btn {
+    background: rgb(51, 178, 1);
 }
-.who{
+
+.who {
     display: flex;
     flex: 1;
-    margin:0 2rem;
-
+    margin: 0 2rem;
 }
 
-.who div{
+.who div {
     flex: 1;
-    margin-top: 5rem; 
- /* Divide the section into two equal parts,Equal sides in the divs inside who div*/
+    margin-top: 5rem;
+    /* Divide the section into two equal parts,Equal sides in the divs inside who div*/
 }
-.title{
+
+.title {
     display: flex;
     justify-content: space-evenly;
 }
-.who .who-img{ 
+
+.who .who-img {
     justify-content: space-around;
 }
-.who img{
+
+.who img {
     width: 80%;
     height: 90%;
 }
 
+
 /* utils  */
 
-.justify-text{
+.justify-text {
     text-align: justify;
- }
- 
- .bg-primary{
-     background: rgba(11, 153, 0, 0.711);
-     color: aliceblue;
- }
- .clr{
-     clear:both ;
- }
- 
-.btn-dark{
+}
+
+.bg-primary {
+    background: rgba(11, 153, 0, 0.711);
+    color: aliceblue;
+}
+
+.clr {
+    clear: both;
+}
+
+.btn-dark {
     background: rgb(50, 50, 50);
     color: white;
 }
 
-.py-1{
+.py-1 {
     padding: 1.5rem 0;
 }
 
-.py-2{
+.py-2 {
     padding: 3rem 0;
     margin: 2rem 0;
-} 
-.py-3{
-padding: 0 0.7rem;
 }
-.m-heading{
+
+.py-3 {
+    padding: 0 0.7rem;
+}
+
+.m-heading {
     color: rgb(29, 155, 1);
 }
-.d-heading{
+
+.d-heading {
     color: black;
 }
-.p-1{
+
+.p-1 {
     padding: 1.5rem;
 }
-.who h2,.who p,.center{
-    align-items: center;
 
+.who h2,
+.who p,
+.center {
+    align-items: center;
 }
-.center{
-    width: 40%;
-    height: 90%;
+
+.center {
+    inline-size: 40%;
+    block-size: 90%;
 }
-.y-1{
+
+.y-1 {
     flex-direction: column;
+}
+
+.icons svg {
+    inline-size: 10%;
+    block-size: 10%;
+}
+
+.modal,
+.modal-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.confirm-delete,
+.cancel-delete {
+    background-color: rgba(255, 65, 65, 0.431);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cancel-delete {
+    background-color: rgb(167, 161, 161);
+}
+
+.confirm-delete:hover {
+    background-color: rgba(255, 65, 65, 0.657);
+    ;
+}
+
+.cancel-delete:hover {
+    background-color: rgb(120, 115, 115);
+    ;
+}
+
+.text-area {
+    margin-block-start: 15rem;
+    block-size: 200px;
+    inline-size: 300px;
 }

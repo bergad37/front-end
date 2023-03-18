@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Poor+Story&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Poor+Story&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Project1/Styles/AllBlog.css">
 
 
     <title>Blog Page</title>
-   
-  </head>
-  <body>
+
+</head>
+
+<body>
     <div class="" style="display:flex;align-items: flex-start;margin: 20px 20px;">
-     <a href="/index.html"> <h1 class="logo">
-        <span class="text-primary">Gad Bertrand
+        <a href="/index.html">
+            <h1 class="logo">
+                <span class="text-primary">Gad Bertrand
         </span>
-    </h1></a>
-  </a>
-</div>
-   
-    <div class="title py-2"><h1>Blogs</h1></div>
-    <div id="elements">
-  </div>
+            </h1>
+        </a>
+        </a>
     </div>
-  </body>
-  <script src="../../js/AllBlogTable.js"></script>
+
+    <div class="modal">
+        <div class="modal-content">
+            <h2>Are you sure you want to delete?</h2>
+            <p id="notify">This action cannot be undone.</p>
+            <button class="confirm-delete">Delete</button>
+            <button class="cancel-delete">Cancel</button>
+        </div>
+    </div>
+
+    <div class="modal-2">
+        <div class="modal-content">
+            <p id="notify"></p>
+            <button class="cancel-delete">OK</button>
+        </div>
+    </div>
+    <div class="title py-2">
+        <h1>Blogs</h1>
+    </div>
+    <div id="elements">
+    </div>
+    </div>
+</body>
+<script src="../../js/AllBlogTable.js"></script>
+
 </html>
