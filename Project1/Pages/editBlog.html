@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Poor+Story&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Poor+Story&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
-<link rel="stylesheet" href="../Styles/AllBlog.css">
-<link rel="stylesheet" href="../Styles/style2.css">
-    <title>EditBlog</title>
-  </head>
-  <body>
-    <div class="" style="display:flex;align-items: flex-start;margin: 20px 20px;"><a href="../Pages/index.html">
+    <link rel="stylesheet" href="../Styles/AllBlog.css">
+    <link rel="stylesheet" href="../Styles/style2.css">
+    <title>Edit Blog</title>
+</head>
 
-      <h1 class="logo">
-        <span class="text-primary">
+<body>
+    <div class="" style="display:flex;align-items: flex-start;margin: 20px 20px;">
+        <a href="/Project1/Pages/subpages/blogpanel.html">
+
+            <h1 class="logo">
+                <span class="text-primary">
             <i class="fas fa-book-open"></i>Gad
         </span>Bertrand
-    </h1>
-  </a>
-</div>
-<div id="elements">
+            </h1>
+        </a>
+    </div>
+    <div id="elements">
 
-</div>
+    </div>
     <div class="container2">
-     
+        <div class="inline">
+            <p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+        </div>
         <div>
-      <h1 class="py-1">Edit Blog</h1>
+            <h1 class="py-1">Edit Blog</h1>
 
-      <div id="alert-container" class="py-1" style="display: none;">
-          <p class="" id="alarm"></p>
-      </div>
-      <form id="edit-blog">
-        <label for="">Title</label><br>
-        <input type="text" placeholder="Edit title" id="ttle" class="py-4">
-        <textarea type="text"  id="content" class="py-4">Compose new content</textarea>
-        <label for="" class="py-1">Edit image</label><br>
-        <input type="file" id="image" name="image2" class="py-1"><br>
-         <input type="submit"  value="Update" id="update-btn">
-      </form>
+            <div id="alert-container" class="py-1" style="display: none;">
+                <p class="" id="alarm"></p>
+            </div>
+            <form id="edit-blog">
+                <label for="">Title</label><br>
+                <input type="text" placeholder="Edit title" id="ttle" class="py-4">
+                <textarea type="text" id="content" class="py-4">Compose new content</textarea>
+                <label for="" class="py-1">Edit image</label><br>
+                <input type="file" id="image" name="image2" class="py-1"><br>
+                <input type="submit" value="Update" id="update-btn">
+            </form>
+        </div>
     </div>
-    </div>
-  </body>
-  <script src="../js/updateBlog.js"></script>
+</body>
+<script src="../js/updateBlog.js"></script>
+
 </html>

@@ -10,9 +10,9 @@ const usermail=document.getElementById("usermail").value;
 const password=document.getElementById("password").value;
 
 const data={email:usermail,password:password};
-console.log(data);
 
-fetch('http://127.0.0.1:2000/api/v1/login',
+
+fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/login',
 {
 method:"POST",
 headers:{
@@ -24,9 +24,9 @@ body: JSON.stringify(data)
     return result.json();
 })
 .then(result=>{
-    console.log(result);
     if(result.ok){
         localStorage.setItem("authtoken",result.validToken);
+        localStorage.setItem("role",result.data.isAdmin)
         location.href="../Pages/dashboard.html"
     }
     else{

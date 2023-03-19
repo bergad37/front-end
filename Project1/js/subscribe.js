@@ -1,5 +1,5 @@
 const subscribeForm=document.getElementById("enter-mail");
-console.log(subscribeForm);
+
 const subscribersList=document.getElementById("subs")
 
 subscribeForm.addEventListener("submit",(e)=>{
@@ -8,7 +8,7 @@ subscribeForm.addEventListener("submit",(e)=>{
 const Email=document.getElementById("mail").value;
 const data={email:Email}
 
-fetch('http://localhost:2000/api/v1/followers',
+fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/followers',
 {
 method:"POST",
 headers:{
@@ -24,7 +24,7 @@ body:JSON.stringify(data)
 })
 })
 
-fetch('http://localhost:2000/api/v1/followers')
+fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/followers')
 .then((result) => {
     return result.json();
 })

@@ -1,5 +1,6 @@
  const box=document.getElementById("elements");
-
+const notificationBox=document.getElementById("alert-container");
+const notifyContent=document.getElementById("alarm");
 const editForm=document.getElementById("edit-blog");
 const titlebox=document.getElementById("ttle");
 const contentb=document.getElementById("content");
@@ -8,19 +9,18 @@ const img=document.getElementById("image");
 const updateButton=document.getElementById("update-btn");
 // const savedId=localStorage.getItem('id');
 
-fetch(`http://127.0.0.1:2000/api/v1/blogs/${localStorage.getItem('id')}`)
+fetch(`https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs/${localStorage.getItem('id')}`)
 .then((result) => {
     return result.json()
 }).then((result) => {
-     console.log(result);
-
-   
+    
     const row=document.createElement("section");
     row.classList.add("who");
     //row.id = `result-${result.data._id}`;
     
     const postDate=document.createElement("h4");
     
+
     const image=document.createElement("div");
     image.classList.add("who-img","center");
 
@@ -61,7 +61,6 @@ fetch(`http://127.0.0.1:2000/api/v1/blogs/${localStorage.getItem('id')}`)
 
       box.appendChild(row);
 
-
       titlebox.value=result.data.title;
       contentb.textContent=result.data.message;
 
@@ -79,13 +78,12 @@ img.addEventListener("change", (e) => {
     });
 
 updateButton.addEventListener("click", (e) => {
-   
     const blogData = {
         title: titlebox.value,
         message: contentb.value,
         imageUrl: file
     };
-    fetch(`http://127.0.0.1:2000/api/v1/blogs/${localStorage.getItem('id')}`, {
+    fetch(`https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs/${localStorage.getItem('id')}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
@@ -97,5 +95,10 @@ updateButton.addEventListener("click", (e) => {
     })
     .then((result) => {
         console.log(result);
+        notifyContent.textContent=result.message;
+        notificationBox.style.display="block";
+    })
+    .catch((err)=>{
+        alert(err);
     })
 });

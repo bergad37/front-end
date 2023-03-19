@@ -1,167 +1,179 @@
 /* Import  monstreat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-line-height: 1.4;
+    line-height: 1.4;
 }
 
-a{
+a {
     text-decoration: none;
 }
-.photo{
+
+.photo {
     border-radius: 50%;
 }
-.icon-2{
+
+.author {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.icon-2 {
     display: flex;
-   align-items: center;
+    align-items: center;
     max-height: 10%;
     max-width: 30%;
-    padding:30px 30px;
-    
+    padding: 30px 30px;
 }
-.icon-2 svg{
+
+.icon-2 svg {
     margin: 0 0.8rem;
 }
-.container{
+
+.container {
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
-    overflow:hidden;
-
+    overflow: hidden;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-
-.text-primary{
+.text-primary {
     color: rgb(0, 255, 132);
 }
 
-.bg-light{
+.bg-light {
     background: whitesmoke;
     color: grey;
 }
 
-.bg-darker{
+.bg-darker {
     background: rgba(39, 38, 38, 0.628);
     color: whitesmoke;
-    }
-    
-.bg-dark{
-background: grey;
-color: whitesmoke;
 }
-#alert-container,#alert{
+
+.bg-dark {
+    background: grey;
+    color: whitesmoke;
+}
+
+#alert-container,
+#alert {
     background: #6be26b5c;
     border-radius: 8px;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     color: rgba(2, 28, 72, 0.732);
-
 }
-.bg-blue{
+
+.bg-blue {
     color: white;
-    background: rgb(3, 34, 55);;
+    background: rgb(3, 34, 55);
+    ;
 }
 
-.light-text{
+.light-text {
     font-weight: normal;
 }
-.l-heading{
+
+.l-heading {
     font-size: 4rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
 }
 
-.m-heading{
+.m-heading {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
-   
 }
-.lead{
+
+.lead {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
-.btn{
-display: inline-block;
-background: greenyellow;
-padding: 0.5rem 2rem;
-border: none;
-border-radius: 5px;
+
+.btn {
+    display: inline-block;
+    background: greenyellow;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
 }
 
-.btn:hover{
+.btn:hover {
     background: rgb(114, 255, 114);
 }
 
-.btn-dark{
+.btn-dark {
     background: rgb(50, 50, 50);
     color: white;
 }
-.text-alert{
+
+.text-alert {
     color: red;
 }
 
-.justify-text{
-   text-align: justify;
+.justify-text {
+    text-align: justify;
 }
 
-.bg-primary{
+.bg-primary {
     background: rgba(11, 153, 0, 0.711);
     color: aliceblue;
 }
-.clr{
-    clear:both ;
+
+.clr {
+    clear: both;
 }
-.list{
+
+.list {
     margin: 0.5rem 0;
     list-style: none;
 }
 
-.list li{
+.list li {
     padding: 0.2rem 0;
     border-bottom: rgb(255, 250, 250) 1px;
 }
+
+
 /* Nav Bar */
 
-#navbar{
+#navbar {
     display: flex;
     position: sticky;
     top: 0;
-    background:grey;
+    background: grey;
     color: aliceblue;
     justify-content: space-between;
     z-index: 1;
     padding: 1rem;
-
 }
 
-
-#navbar ul{
+#navbar ul {
     display: flex;
     align-items: center;
     list-style: none;
-
 }
 
-#navbar ul li a{
+#navbar ul li a {
     color: rgb(255, 255, 255);
-    padding:0.75rem;
+    padding: 0.75rem;
     margin: 0 0.25rem;
-
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
     background: rgb(10, 206, 79);
     border-radius: 5px;
 }
@@ -169,117 +181,128 @@ border-radius: 5px;
 
 /* showcase style */
 
-#showcase{
-     background:black no-repeat center center/cover;  /* We have to add in the background image */
-height: 100vh;
-color: white;
+#showcase {
+    background: black no-repeat center center/cover;
+    /* We have to add in the background image */
+    height: 100vh;
+    color: white;
+}
 
-    }
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /*overlay to cover the entire content*/
+}
 
-    #showcase .showcase-content{
-        display: flex;
-        flex-direction:column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        padding: 0 2rem;
-
-       
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-background-color: rgba(0,0,0, 0.4);
-        /*overlay to cover the entire content*/
-    }
-
-.btn-secondary{
+.btn-secondary {
     background: rgba(29, 135, 255, 0.963);
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
 }
-.btn-secondary a{
+
+.btn-secondary a {
     color: white;
 }
-    .py-1{
-        padding: 1.5rem 0;
-    }
 
-    .py-2{
-        padding: 3rem 0;
-    }
+.py-1 {
+    padding: 1.5rem 0;
+}
 
-    .py-3{
-        padding: 6rem 0;
-    }
-    .py-4{
-        margin: 0.75rem 0;
-    }
-    .p-1{
-        padding: 1.5rem;
-    }
+.py-2 {
+    padding: 3rem 0;
+}
 
-    .p-2{
-        padding: 3rem;
-    }
+.py-3 {
+    padding: 6rem 0;
+}
 
-    .p-3{
-        padding: 6rem;
-    }
-    .p-4{
-        padding: 10rem 30rem 2rem 30rem;
-    }
-    .m-5{
-        margin-top: 10rem ;
-        margin-left: 15rem;
-    }
-    /* Work items styling */
+.py-4 {
+    margin: 0.75rem 0;
+}
 
-   #what .items {
-        display: flex;
-        padding: 1rem;
-        margin: 0 0.5rem;
-    }
-    #what .items .item{
-        flex: 1;
-        text-align: center;
-padding: 1rem;
-    }
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 3rem;
+}
+
+.p-3 {
+    padding: 6rem;
+}
+
+.p-4 {
+    padding: 10rem 30rem 2rem 30rem;
+}
+
+.m-5 {
+    margin-top: 10rem;
+    margin-left: 15rem;
+}
+
+
+/* Work items styling */
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
 
 /* adding circled background to each item */
-#what .items .item img{
+
+#what .items .item img {
     max-width: 20%;
     max-height: 40%;
-    background: rgb(1, 202, 179) ;
+    background: rgb(1, 202, 179);
     padding: 1rem;
-    border-radius: 50%;       /*Make it a circle*/
-margin-bottom:  1rem;
-
+    border-radius: 50%;
+    /*Make it a circle*/
+    margin-bottom: 1rem;
 }
-.pic-size{
+
+.pic-size {
     max-width: 100%;
     max-height: 100%;
 }
-.node-pic{
+
+.node-pic {
     height: 200px;
 }
 
+
 /* About me section */
 
-
-#who{
+#who {
     display: flex;
 }
 
-#who div{
-    flex: 1; 
- /* Divide the section into two equal parts,Equal sides in the divs inside who div*/
+#who div {
+    flex: 1;
+    /* Divide the section into two equal parts,Equal sides in the divs inside who div*/
 }
 
-#who .who-img{
+#who .who-img {
     background-color: #91919173;
     justify-content: space-around;
     padding-top: 15rem;
@@ -287,139 +310,164 @@ margin-bottom:  1rem;
 
 
 /* The skills section */
-#skills .items{
+
+#skills .items {
     display: flex;
 }
 
-#skills .items img{
+#skills .items img {
     display: block;
     margin: auto;
     max-width: 40%;
     max-height: auto;
 }
 
+
 /* Contact section */
-#contact{
+
+#contact {
     display: flex;
 }
-#contact .contact-form,#contact .subscribe{
+
+#contact .contact-form,
+#contact .subscribe {
     flex: 1;
 }
 
-#contact .contact-form .form-group{
-    margin:0.75rem ;
+#contact .contact-form .form-group {
+    margin: 0.75rem;
 }
 
-#contact .contact-form label{
+#contact .contact-form label {
     display: block;
 }
 
-#contact .contact-form input,#contact .contact-form textarea,#edit-blog textarea{
+#contact .contact-form input,
+#contact .contact-form textarea,
+#edit-blog textarea {
     width: 100%;
 }
-#contact .contact-form textarea,#edit-blog textarea{
+
+#contact .contact-form textarea,
+#edit-blog textarea {
     height: 200px;
 }
-#contact>div{
+
+#contact>div {
     margin: 2px;
 }
-#contact{
+
+#contact {
     background: rgba(180, 180, 180, 0.027);
 }
 
+
 /* validating the contact form with alert messages */
-.text-alert{
+
+.text-alert {
     display: none;
 }
 
-.px-1{
+.px-1 {
     margin: 0;
     font-size: 15px;
 }
-.px-2{
+
+.px-2 {
     margin-bottom: 0px;
 }
+
+
 /* features section */
 
-
-.blogs{
+.blogs {
     display: flex;
     justify-content: center;
     width: 100%;
     flex-wrap: nowrap;
 }
 
-.box{
- display: inline-block;
- justify-content: space-around;
-  margin: 10px 10px;
-  vertical-align: top;
- padding: 8px;
- align-items: center;
- line-height: 1.5rem;
- text-align: center;
-
-
+.box {
+    display: inline-block;
+    justify-content: space-around;
+    margin: 10px 10px;
+    vertical-align: top;
+    padding: 8px;
+    align-items: center;
+    line-height: 1.5rem;
+    text-align: center;
 }
-.fb{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-.box>h3,.box>p{
+
+.fb {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box>h3,
+.box>p {
     max-width: 100%;
     justify-content: center;
 }
 
-#features{
+#features {
     display: flex;
     border: 1px rgb(62, 62, 62);
     align-items: center;
     flex-wrap: wrap;
 }
-#features>div{
+
+#features>div {
     margin: 10px 0pxx;
 }
-.box img{
+
+.box img {
     margin-bottom: 10px;
 }
 
+
 /* footer */
-#main-footer{
+
+#main-footer {
     display: flex;
     justify-content: space-evenly;
-    background:rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 20px;
     max-width: 100%;
     margin-top: 30px;
     line-height: 1.5;
 }
-  #contact{
-   margin: 20px;
 
-  }
-  .col-sm-3 h5 ,.col-sm-3 p,.col-sm-3 a{
+#contact {
+    margin: 20px;
+}
+
+.col-sm-3 h5,
+.col-sm-3 p,
+.col-sm-3 a {
     padding: 8px 0px;
-  }
-.col-sm-3 a{
+}
+
+.col-sm-3 a {
     color: rgb(0, 170, 93);
 }
 
-.subscribe{
+.subscribe {
     padding-top: 80px;
     border-radius: 1.2rem;
     justify-content: space-around;
 }
 
-.subscribe h3,.subscribe ul li{
+.subscribe h3,
+.subscribe ul li {
     color: rgba(255, 255, 255, 0.852);
     border-bottom: none;
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: larger;
-    font-style:normal;
+    font-style: normal;
 }
 
-.pictures{
+.pictures {
     max-width: 300px;
     max-height: 300px;
 }
@@ -427,19 +475,22 @@ margin-bottom:  1rem;
 .container2 {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    max-width:fit-content;
+    max-width: fit-content;
     margin: 100px auto;
     padding: 30px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
-  }
-  h1 {
+}
+
+h1 {
     text-align: center;
     margin-bottom: 30px;
-  }
-  input[type="text"],
-  input[type="password"],input[type="email"] {
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
@@ -447,9 +498,9 @@ margin-bottom:  1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 14px;
-    
-  }
-  input[type="submit"] {
+}
+
+input[type="submit"] {
     width: 100%;
     margin: 8px 0;
     padding: 8px 10px;
@@ -459,68 +510,82 @@ margin-bottom:  1rem;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-  }
-  input[type="submit"]:hover {
+}
+
+input[type="submit"]:hover {
     background-color: #3e8e41;
-  }
-  #gmail,#fb,#git{
+}
+
+#gmail,
+#fb,
+#git {
     max-width: 100px;
     max-height: 40px;
     padding: 0px 20px;
-  }
-  #blog-table td, #sub-table td {
-    padding: 10px;
-  }
-  #blog-table , #sub-table{
-    border-spacing: 0 10px;
-  }
-  #blog-table thead th ,#sub-table thead th{
-    background-color: #eee;
-    font-weight: bold;
-  }
-  
-  #blog-table tbody tr:hover,#sub-table tbody tr {
-    background-color: #f5f5f5;
-  }
+}
 
-  #blog-table td, #blog-table th,#sub-table td,#sub-table th {
-    border: 1px solid #ddd;
-  }
-  .accounts{
+.accounts {
     display: flex;
-   justify-content: center;
-   margin-top: 0px;
-  }
-  label,th{
- font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+label,
+th {
+    font-family: 'Montserrat', sans-serif;
     font-size: smaller;
-    font-weight:bolder;
+    font-weight: bolder;
     padding: 5px auto;
-  }
-  h1{
-    font-family:  'Montserrat', sans-serif;
-  }
+}
 
-  .nbr{
-   color: black;
-  }
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
 
-  .nbr:hover{
-color: white;
-  }
+.nbr {
+    color: black;
+}
 
-  .subs{
+.nbr:hover {
+    color: white;
+}
+
+.subs {
     display: flex;
     flex-direction: column;
-  }
-  .subs>div{
+}
+
+.subs>div {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    max-width:80%;
+    max-width: 80%;
     margin: 8px 100px;
     padding: 8px 8px;
     background: rgba(211, 210, 210, 0.682);
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
     justify-content: space-evenly;
-  }
+}
+
+#spinner {
+    animation: spin 1s linear infinite;
+    color: rgb(114, 255, 114);
+    ;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.inline {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.spinner i {
+    align-items: center;
+    margin-block-start: 2px;
+    margin-inline-start: 20px;
+}
