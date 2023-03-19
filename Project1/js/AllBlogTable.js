@@ -70,7 +70,7 @@ fetch('https://tiny-puce-stingray-sock.cyclic.app/api/v1/blogs')
                 newComment.textContent = commentBox.value;
                 comments.appendChild(newComment);
                 newComment.value = "";
-
+                newComment.blogIO = result._id;
             })
             const action = document.createElement("div");
             action.classList.add("title");
