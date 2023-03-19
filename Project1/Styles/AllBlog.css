@@ -63,7 +63,7 @@ a {
 }
 
 .who .who-img {
-    justify-content: space-around;
+    align-items: space-around;
 }
 
 .who img {
@@ -167,7 +167,7 @@ a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-inline-end: 10px;
 }
 
 .cancel-delete {
@@ -185,7 +185,7 @@ a {
 }
 
 .text-area {
-    margin-block-start: 15rem;
     block-size: 200px;
     inline-size: 300px;
+    margin: 5px 0;
 }
