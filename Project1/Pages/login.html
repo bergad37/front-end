@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Poor+Story&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../Styles/style2.css">
+
+    <title>Login Page</title>
+   
+  </head>
+  <body>
+    <div class="" style="display:flex;align-items: flex-start;margin: 20px 20px;"><a href="../Pages/index.html">
+
+      <h1 class="logo">
+        <span class="text-primary">
+            <i class="fas fa-book-open"></i>Gad
+        </span>Bertrand
+    </h1>
+  </a>
+</div>
+    <div class="container2">
+     
+        <div>
+      <h1 class="py-1">Login</h1>
+
+      <div id="alert-container" class="py-1" style="display: none;">
+          <p class="" id="alarm"></p>
+      </div>
+      <form id="login-form">
+        <label for="">E-mail</label><br>
+        <input type="email" placeholder="username@account.com" id="usermail" class="py-4">
+
+        <p class="text-alert px-1 " id="alert3">Wrong username</p>
+
+        <label for="">Password</label>
+        <input type="password" placeholder="Password" id="password" class="py-4">
+
+        <p class="text-alert px-1 " id="alert4">Wrong password</p>
+        
+<!-- Once the password and username is correct ,admin is directed to dashboard        -->
+         <input type="submit"  value="Login" id="login-btn">
+      </form>
+                <!-- <span style="padding: 2px 1px 0px 5px;text-align: end;font-size: smaller;"><p>Forgot password?</p></span> -->
+                <p>Don't have account?</p>        
+        <div><a href="./signup.html" style="color: grey;font-size: smaller;text-align: center;" class="py-2">Sign Up</a></div>
+    </div>
+    </div>
+  </body>
+  <script src="../js/login.js"></script>
+</html>
